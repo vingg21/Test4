@@ -13,7 +13,7 @@
 #define BITCOIN_UTIL_H
 
 #if defined(HAVE_CONFIG_H)
-#include "config/phore-config.h"
+#include "config/retrex-config.h"
 #endif
 
 #include "compat.h"
@@ -33,14 +33,14 @@
 // Debugging macros
 // Uncomment the following line to enable debugging messages
 // or enable on a per file basis prior to inclusion of util.h
-//#define ENABLE_PHORE_DEBUG
-#ifdef ENABLE_PHORE_DEBUG
+//#define ENABLE_RETREX_DEBUG
+#ifdef ENABLE_RETREX_DEBUG
 #define DBG( x ) x
 #else
 #define DBG( x )
 #endif
 
-//Phore only features
+//Retrex only features
 
 extern bool fMasterNode;
 extern bool fLiteMode;
@@ -49,7 +49,7 @@ extern int nSwiftTXDepth;
 extern int nZeromintPercentage;
 extern const int64_t AUTOMINT_DELAY;
 extern int nPreferredDenom;
-extern int nAnonymizePhoreAmount;
+extern int nAnonymizeRetrexAmount;
 extern int nLiquidityProvider;
 extern bool fEnableZeromint;
 extern int64_t enforceMasternodePaymentsTime;
@@ -224,7 +224,7 @@ void RenameThread(const char* name);
 template <typename Callable>
 void TraceThread(const char* name, Callable func)
 {
-    std::string s = strprintf("phore-%s", name);
+    std::string s = strprintf("retrex-%s", name);
     RenameThread(s.c_str());
     try {
         LogPrintf("%s thread start\n", name);

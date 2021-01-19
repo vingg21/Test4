@@ -84,7 +84,7 @@ UniValue importprivkey(const UniValue& params, bool fHelp)
         throw runtime_error(
             "importprivkey \"pivxprivkey\" ( \"label\" rescan )\n"
             "\nAdds a private key (as returned by dumpprivkey) to your wallet.\n" +
-            HelpRequiringPassphrase() + "\n"
+            HelpRequiringPassreexase() + "\n"
 
             "\nArguments:\n"
             "1. \"pivxprivkey\"   (string, required) The private key (see dumpprivkey)\n"
@@ -229,7 +229,7 @@ UniValue importwallet(const UniValue& params, bool fHelp)
         throw runtime_error(
             "importwallet \"filename\"\n"
             "\nImports keys from a wallet dump file (see dumpwallet).\n" +
-            HelpRequiringPassphrase() + "\n"
+            HelpRequiringPassreexase() + "\n"
 
             "\nArguments:\n"
             "1. \"filename\"    (string, required) The wallet file\n"
@@ -333,7 +333,7 @@ UniValue dumpprivkey(const UniValue& params, bool fHelp)
             "dumpprivkey \"pivxaddress\"\n"
             "\nReveals the private key corresponding to 'pivxaddress'.\n"
             "Then the importprivkey can be used with this output\n" +
-            HelpRequiringPassphrase() + "\n"
+            HelpRequiringPassreexase() + "\n"
 
             "\nArguments:\n"
             "1. \"pivxaddress\"   (string, required) The pivx address for the private key\n"
@@ -368,7 +368,7 @@ UniValue dumpwallet(const UniValue& params, bool fHelp)
         throw runtime_error(
             "dumpwallet \"filename\"\n"
             "\nDumps all wallet keys in a human-readable format.\n" +
-            HelpRequiringPassphrase() + "\n"
+            HelpRequiringPassreexase() + "\n"
 
             "\nArguments:\n"
             "1. \"filename\"    (string, required) The filename\n"
@@ -429,27 +429,27 @@ UniValue bip38encrypt(const UniValue& params, bool fHelp)
 {
     if (fHelp || params.size() != 2)
         throw runtime_error(
-            "bip38encrypt \"pivxaddress\" \"passphrase\"\n"
+            "bip38encrypt \"pivxaddress\" \"passreexase\"\n"
             "\nEncrypts a private key corresponding to 'pivxaddress'.\n" +
-            HelpRequiringPassphrase() + "\n"
+            HelpRequiringPassreexase() + "\n"
 
             "\nArguments:\n"
             "1. \"pivxaddress\"   (string, required) The pivx address for the private key (you must hold the key already)\n"
-            "2. \"passphrase\"   (string, required) The passphrase you want the private key to be encrypted with - Valid special chars: !#$%&'()*+,-./:;<=>?`{|}~ \n"
+            "2. \"passreexase\"   (string, required) The passreexase you want the private key to be encrypted with - Valid special chars: !#$%&'()*+,-./:;<=>?`{|}~ \n"
 
             "\nResult:\n"
             "\"key\"                (string) The encrypted private key\n"
 
             "\nExamples:\n" +
-            HelpExampleCli("bip38encrypt", "\"DMJRSsuU9zfyrvxVaAEFQqK4MxZg6vgeS6\" \"mypasphrase\"") +
-            HelpExampleRpc("bip38encrypt", "\"DMJRSsuU9zfyrvxVaAEFQqK4MxZg6vgeS6\" \"mypasphrase\""));
+            HelpExampleCli("bip38encrypt", "\"DMJRSsuU9zfyrvxVaAEFQqK4MxZg6vgeS6\" \"mypasreexase\"") +
+            HelpExampleRpc("bip38encrypt", "\"DMJRSsuU9zfyrvxVaAEFQqK4MxZg6vgeS6\" \"mypasreexase\""));
 
     LOCK2(cs_main, pwalletMain->cs_wallet);
 
     EnsureWalletIsUnlocked();
 
     string strAddress = params[0].get_str();
-    string strPassphrase = params[1].get_str();
+    string strPassreexase = params[1].get_str();
 
     CBitcoinAddress address;
     if (!address.SetString(strAddress))
@@ -462,7 +462,7 @@ UniValue bip38encrypt(const UniValue& params, bool fHelp)
         throw JSONRPCError(RPC_WALLET_ERROR, "Private key for address " + strAddress + " is not known");
 
     uint256 privKey = vchSecret.GetPrivKey_256();
-    string encryptedOut = BIP38_Encrypt(strAddress, strPassphrase, privKey, vchSecret.IsCompressed());
+    string encryptedOut = BIP38_Encrypt(strAddress, strPassreexase, privKey, vchSecret.IsCompressed());
 
     UniValue result(UniValue::VOBJ);
     result.push_back(Pair("Addess", strAddress));
@@ -475,32 +475,32 @@ UniValue bip38decrypt(const UniValue& params, bool fHelp)
 {
     if (fHelp || params.size() != 2)
         throw runtime_error(
-            "bip38decrypt \"pivxaddress\" \"passphrase\"\n"
+            "bip38decrypt \"pivxaddress\" \"passreexase\"\n"
             "\nDecrypts and then imports password protected private key.\n" +
-            HelpRequiringPassphrase() + "\n"
+            HelpRequiringPassreexase() + "\n"
 
             "\nArguments:\n"
             "1. \"encryptedkey\"   (string, required) The encrypted private key\n"
-            "2. \"passphrase\"   (string, required) The passphrase you want the private key to be encrypted with\n"
+            "2. \"passreexase\"   (string, required) The passreexase you want the private key to be encrypted with\n"
 
             "\nResult:\n"
             "\"key\"                (string) The decrypted private key\n"
 
             "\nExamples:\n" +
-            HelpExampleCli("bip38decrypt", "\"encryptedkey\" \"mypassphrase\"") +
-            HelpExampleRpc("bip38decrypt", "\"encryptedkey\" \"mypassphrase\""));
+            HelpExampleCli("bip38decrypt", "\"encryptedkey\" \"mypassreexase\"") +
+            HelpExampleRpc("bip38decrypt", "\"encryptedkey\" \"mypassreexase\""));
 
     LOCK2(cs_main, pwalletMain->cs_wallet);
 
     EnsureWalletIsUnlocked();
 
-    /** Collect private key and passphrase **/
+    /** Collect private key and passreexase **/
     string strKey = params[0].get_str();
-    string strPassphrase = params[1].get_str();
+    string strPassreexase = params[1].get_str();
 
     uint256 privKey;
     bool fCompressed;
-    if (!BIP38_Decrypt(strPassphrase, strKey, privKey, fCompressed))
+    if (!BIP38_Decrypt(strPassreexase, strKey, privKey, fCompressed))
         throw JSONRPCError(RPC_WALLET_ERROR, "Failed To Decrypt");
 
     UniValue result(UniValue::VOBJ);

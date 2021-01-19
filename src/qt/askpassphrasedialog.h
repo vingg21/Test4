@@ -2,8 +2,8 @@
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef BITCOIN_QT_ASKPASSPHRASEDIALOG_H
-#define BITCOIN_QT_ASKPASSPHRASEDIALOG_H
+#ifndef BITCOIN_QT_ASKPASSREEXASEDIALOG_H
+#define BITCOIN_QT_ASKPASSREEXASEDIALOG_H
 
 #include <QDialog>
 #include "allocators.h"
@@ -12,32 +12,32 @@ class WalletModel;
 
 namespace Ui
 {
-class AskPassphraseDialog;
+class AskPassreexaseDialog;
 }
 
-/** Multifunctional dialog to ask for passphrases. Used for encryption, unlocking, and changing the passphrase.
+/** Multifunctional dialog to ask for passreexases. Used for encryption, unlocking, and changing the passreexase.
  */
-class AskPassphraseDialog : public QDialog
+class AskPassreexaseDialog : public QDialog
 {
     Q_OBJECT
 
 public:
     enum Mode {
-        Encrypt,         /**< Ask passphrase twice and encrypt */
-        UnlockAnonymize, /**< Ask passphrase and unlock only for anonymization */
-        Unlock,          /**< Ask passphrase and unlock */
-        ChangePass,      /**< Ask old passphrase + new passphrase twice */
-        Decrypt          /**< Ask passphrase and decrypt wallet */
+        Encrypt,         /**< Ask passreexase twice and encrypt */
+        UnlockAnonymize, /**< Ask passreexase and unlock only for anonymization */
+        Unlock,          /**< Ask passreexase and unlock */
+        ChangePass,      /**< Ask old passreexase + new passreexase twice */
+        Decrypt          /**< Ask passreexase and decrypt wallet */
     };
 
-    explicit AskPassphraseDialog(Mode mode, QWidget* parent, WalletModel* model);
-    ~AskPassphraseDialog();
+    explicit AskPassreexaseDialog(Mode mode, QWidget* parent, WalletModel* model);
+    ~AskPassreexaseDialog();
 
     void accept();
     SecureString getPassword() { return oldpass; }
 
 private:
-    Ui::AskPassphraseDialog* ui;
+    Ui::AskPassreexaseDialog* ui;
     Mode mode;
     WalletModel* model;
     bool fCapsLock;
@@ -51,4 +51,4 @@ protected:
     bool eventFilter(QObject* object, QEvent* event);
 };
 
-#endif // BITCOIN_QT_ASKPASSPHRASEDIALOG_H
+#endif // BITCOIN_QT_ASKPASSREEXASEDIALOG_H

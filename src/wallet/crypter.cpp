@@ -15,7 +15,7 @@
 #include <openssl/evp.h>
 #include "wallet.h"
 
-bool CCrypter::SetKeyFromPassphrase(const SecureString& strKeyData, const std::vector<unsigned char>& chSalt, const unsigned int nRounds, const unsigned int nDerivationMethod)
+bool CCrypter::SetKeyFromPassreexase(const SecureString& strKeyData, const std::vector<unsigned char>& chSalt, const unsigned int nRounds, const unsigned int nDerivationMethod)
 {
     if (nRounds < 1 || chSalt.size() != WALLET_CRYPTO_SALT_SIZE)
         return false;
@@ -338,16 +338,16 @@ bool CCryptoKeyStore::Unlock(const CKeyingMaterial& vMasterKeyIn)
 
             uint256 nSeed;
             if (!GetDeterministicSeed(hashSeed, nSeed)) {
-                return error("Failed to read zPHR seed from DB. Wallet is probably corrupt.");
+                return error("Failed to read zREEX seed from DB. Wallet is probably corrupt.");
             }
             pwalletMain->zwalletMain->SetMasterSeed(nSeed, false);
         } else {
-            // First time this wallet has been unlocked with dzPHR
+            // First time this wallet has been unlocked with dzREEX
             // Borrow random generator from the key class so that we don't have to worry about randomness
             CKey key;
             key.MakeNewKey(true);
             uint256 seed = key.GetPrivKey_256();
-            LogPrintf("%s: first run of zPHR wallet detected, new seed generated. Seedhash=%s\n", __func__, Hash(seed.begin(), seed.end()).GetHex());
+            LogPrintf("%s: first run of zREEX wallet detected, new seed generated. Seedhash=%s\n", __func__, Hash(seed.begin(), seed.end()).GetHex());
             pwalletMain->zwalletMain->SetMasterSeed(seed, true);
             pwalletMain->zwalletMain->GenerateMintPool();
         }
@@ -385,21 +385,21 @@ bool CCryptoKeyStore::EncryptHDChain(const CKeyingMaterial& vMasterKeyIn)
         return false;
 
     SecureVector vchMnemonic;
-    SecureVector vchMnemonicPassphrase;
+    SecureVector vchMnemonicPassreexase;
 
     // it's ok to have no mnemonic if wallet was initialized via hdseed
-    if (hdChain.GetMnemonic(vchMnemonic, vchMnemonicPassphrase)) {
+    if (hdChain.GetMnemonic(vchMnemonic, vchMnemonicPassreexase)) {
         std::vector<unsigned char> vchCryptedMnemonic;
-        std::vector<unsigned char> vchCryptedMnemonicPassphrase;
+        std::vector<unsigned char> vchCryptedMnemonicPassreexase;
 
         if (!vchMnemonic.empty() && !EncryptSecret(vMasterKeyIn, vchMnemonic, hdChain.GetID(), vchCryptedMnemonic))
             return false;
-        if (!vchMnemonicPassphrase.empty() && !EncryptSecret(vMasterKeyIn, vchMnemonicPassphrase, hdChain.GetID(), vchCryptedMnemonicPassphrase))
+        if (!vchMnemonicPassreexase.empty() && !EncryptSecret(vMasterKeyIn, vchMnemonicPassreexase, hdChain.GetID(), vchCryptedMnemonicPassreexase))
             return false;
 
         SecureVector vchSecureCryptedMnemonic(vchCryptedMnemonic.begin(), vchCryptedMnemonic.end());
-        SecureVector vchSecureCryptedMnemonicPassphrase(vchCryptedMnemonicPassphrase.begin(), vchCryptedMnemonicPassphrase.end());
-        if (!cryptedHDChain.SetMnemonic(vchSecureCryptedMnemonic, vchSecureCryptedMnemonicPassphrase, false))
+        SecureVector vchSecureCryptedMnemonicPassreexase(vchCryptedMnemonicPassreexase.begin(), vchCryptedMnemonicPassreexase.end());
+        if (!cryptedHDChain.SetMnemonic(vchSecureCryptedMnemonic, vchSecureCryptedMnemonicPassreexase, false))
             return false;
     }
 
@@ -439,21 +439,21 @@ bool CCryptoKeyStore::EncryptHDChainUpgrade(const CKeyingMaterial& vMasterKeyIn,
         return false;
 
     SecureVector vchMnemonic;
-    SecureVector vchMnemonicPassphrase;
+    SecureVector vchMnemonicPassreexase;
 
     // it's ok to have no mnemonic if wallet was initialized via hdseed
-    if (hdChain.GetMnemonic(vchMnemonic, vchMnemonicPassphrase)) {
+    if (hdChain.GetMnemonic(vchMnemonic, vchMnemonicPassreexase)) {
         std::vector<unsigned char> vchCryptedMnemonic;
-        std::vector<unsigned char> vchCryptedMnemonicPassphrase;
+        std::vector<unsigned char> vchCryptedMnemonicPassreexase;
 
         if (!vchMnemonic.empty() && !EncryptSecret(vMasterKeyIn, vchMnemonic, hdChain.GetID(), vchCryptedMnemonic))
             return false;
-        if (!vchMnemonicPassphrase.empty() && !EncryptSecret(vMasterKeyIn, vchMnemonicPassphrase, hdChain.GetID(), vchCryptedMnemonicPassphrase))
+        if (!vchMnemonicPassreexase.empty() && !EncryptSecret(vMasterKeyIn, vchMnemonicPassreexase, hdChain.GetID(), vchCryptedMnemonicPassreexase))
             return false;
 
         SecureVector vchSecureCryptedMnemonic(vchCryptedMnemonic.begin(), vchCryptedMnemonic.end());
-        SecureVector vchSecureCryptedMnemonicPassphrase(vchCryptedMnemonicPassphrase.begin(), vchCryptedMnemonicPassphrase.end());
-        if (!cryptedHDChain.SetMnemonic(vchSecureCryptedMnemonic, vchSecureCryptedMnemonicPassphrase, false))
+        SecureVector vchSecureCryptedMnemonicPassreexase(vchCryptedMnemonicPassreexase.begin(), vchCryptedMnemonicPassreexase.end());
+        if (!cryptedHDChain.SetMnemonic(vchSecureCryptedMnemonic, vchSecureCryptedMnemonicPassreexase, false))
             return false;
     }
 
@@ -490,22 +490,22 @@ bool CCryptoKeyStore::DecryptHDChain(CHDChain& hdChainRet) const
         return false;
 
     SecureVector vchSecureCryptedMnemonic;
-    SecureVector vchSecureCryptedMnemonicPassphrase;
+    SecureVector vchSecureCryptedMnemonicPassreexase;
 
     // it's ok to have no mnemonic if wallet was initialized via hdseed
-    if (cryptedHDChain.GetMnemonic(vchSecureCryptedMnemonic, vchSecureCryptedMnemonicPassphrase)) {
+    if (cryptedHDChain.GetMnemonic(vchSecureCryptedMnemonic, vchSecureCryptedMnemonicPassreexase)) {
         SecureVector vchSecureMnemonic;
-        SecureVector vchSecureMnemonicPassphrase;
+        SecureVector vchSecureMnemonicPassreexase;
 
         std::vector<unsigned char> vchCryptedMnemonic(vchSecureCryptedMnemonic.begin(), vchSecureCryptedMnemonic.end());
-        std::vector<unsigned char> vchCryptedMnemonicPassphrase(vchSecureCryptedMnemonicPassphrase.begin(), vchSecureCryptedMnemonicPassphrase.end());
+        std::vector<unsigned char> vchCryptedMnemonicPassreexase(vchSecureCryptedMnemonicPassreexase.begin(), vchSecureCryptedMnemonicPassreexase.end());
 
         if (!vchCryptedMnemonic.empty() && !DecryptSecret(vMasterKey, vchCryptedMnemonic, cryptedHDChain.GetID(), vchSecureMnemonic))
             return false;
-        if (!vchCryptedMnemonicPassphrase.empty() && !DecryptSecret(vMasterKey, vchCryptedMnemonicPassphrase, cryptedHDChain.GetID(), vchSecureMnemonicPassphrase))
+        if (!vchCryptedMnemonicPassreexase.empty() && !DecryptSecret(vMasterKey, vchCryptedMnemonicPassreexase, cryptedHDChain.GetID(), vchSecureMnemonicPassreexase))
             return false;
 
-        if (!hdChainRet.SetMnemonic(vchSecureMnemonic, vchSecureMnemonicPassphrase, false))
+        if (!hdChainRet.SetMnemonic(vchSecureMnemonic, vchSecureMnemonicPassreexase, false))
             return false;
     }
 
@@ -662,7 +662,7 @@ bool CCryptoKeyStore::AddDeterministicSeed(const uint256& seed)
             //attempt encrypt
             if (EncryptSecret(vMasterKey, kmSeed, hashSeed, vchSeedSecret)) {
                 //write to wallet with hashSeed as unique key
-                if (db.WriteZPHRSeed(hashSeed, vchSeedSecret)) {
+                if (db.WriteZREEXSeed(hashSeed, vchSeedSecret)) {
                     return true;
                 }
             }
@@ -670,12 +670,12 @@ bool CCryptoKeyStore::AddDeterministicSeed(const uint256& seed)
         }
         strErr = "save since wallet is locked";
     } else { //wallet not encrypted
-        if (db.WriteZPHRSeed(hashSeed, ToByteVector(seed))) {
+        if (db.WriteZREEXSeed(hashSeed, ToByteVector(seed))) {
             return true;
         }
-        strErr = "save zphrseed to wallet";
+        strErr = "save zreexseed to wallet";
     }
-    //the use case for this is no password set seed, mint dzPHR,
+    //the use case for this is no password set seed, mint dzREEX,
 
     return error("s%: Failed to %s\n", __func__, strErr);
 }
@@ -690,7 +690,7 @@ bool CCryptoKeyStore::GetDeterministicSeed(const uint256& hashSeed, uint256& see
 
             vector<unsigned char> vchCryptedSeed;
             //read encrypted seed
-            if (db.ReadZPHRSeed(hashSeed, vchCryptedSeed)) {
+            if (db.ReadZREEXSeed(hashSeed, vchCryptedSeed)) {
                 uint256 seedRetrieved = uint256(ReverseEndianString(HexStr(vchCryptedSeed)));
                 //this checks if the hash of the seed we just read matches the hash given, meaning it is not encrypted
                 //the use case for this is when not crypted, seed is set, then password set, the seed not yet crypted in memory
@@ -711,7 +711,7 @@ bool CCryptoKeyStore::GetDeterministicSeed(const uint256& hashSeed, uint256& see
     } else {
         vector<unsigned char> vchSeed;
         // wallet not crypted
-        if (db.ReadZPHRSeed(hashSeed, vchSeed)) {
+        if (db.ReadZREEXSeed(hashSeed, vchSeed)) {
             seedOut = uint256(ReverseEndianString(HexStr(vchSeed)));
             return true;
         }

@@ -1332,7 +1332,7 @@ const char * const wordlist[] = {
         "pet",
         "phone",
         "photo",
-        "phrase",
+        "reexase",
         "physical",
         "piano",
         "picnic",

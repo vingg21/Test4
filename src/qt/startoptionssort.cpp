@@ -1,5 +1,5 @@
 //
-// Created by Kolby on 6/19/2019.
+// Created by Kolby on 6/19/2021.
 //
 
 
@@ -82,7 +82,7 @@ StartOptionsSort::StartOptionsSort(std::vector<std::string> Words, int rows, QWi
     ui->setupUi(this);
     ui->dragdropLabel->setText(
             tr("Please <b>drag</b> and <b>drop</b> your seed words into the "
-               "correct order to confirm your recovery phrase. "));
+               "correct order to confirm your recovery reexase. "));
     ui->dragdropLabel2->setText(
             tr("To remove words click the word then hit backspace."));
     scene = new QGraphicsScene(this);

@@ -7,7 +7,7 @@
 #include "key.h"
 #include "util.h"
 #include "utilstrencodings.h"
-#include "test/test_phore.h"
+#include "test/test_retrex.h"
 #include "bip39.h"
 
 #include <boost/test/unit_test.hpp>
@@ -46,8 +46,8 @@ BOOST_AUTO_TEST_CASE(bip39_vectors)
             BOOST_CHECK(CMnemonic::Check(mnemonic));
 
             SecureVector seed;
-            SecureString passphrase("TREZOR");
-            CMnemonic::ToSeed(mnemonic, passphrase, seed);
+            SecureString passreexase("TREZOR");
+            CMnemonic::ToSeed(mnemonic, passreexase, seed);
             // printf("seed: %s\n", HexStr(std::string(seed.begin(), seed.end())).c_str());
             BOOST_CHECK(HexStr(std::string(seed.begin(), seed.end())) == test[2].get_str());
 

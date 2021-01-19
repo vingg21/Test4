@@ -1,10 +1,10 @@
-// Copyright (c) 2019 The Phore Developers
+// Copyright (c) 2021 The Retrex Developers
 // Copyright (c) 2018 The Curium developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 #if defined(HAVE_CONFIG_H)
-#include "config/phore-config.h"
+#include "config/retrex-config.h"
 #endif
 
 #include "configuremasternodepage.h"

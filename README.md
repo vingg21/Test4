@@ -1,24 +1,24 @@
-Phore Core integration/staging repository
+Retrex Core integration/staging repository
 =====================================
 
-[![Build Status](https://travis-ci.org/phoreproject/Phore.svg?branch=master)](https://travis-ci.org/phoreproject/Phore)
+[![Build Status](https://travis-ci.org/retrexproject/Retrex.svg?branch=master)](https://travis-ci.org/retrexproject/Retrex)
 
-Phore is a cutting edge cryptocurrency, with many features not available in most other cryptocurrencies.
+Retrex is a cutting edge cryptocurrency, with many features not available in most other cryptocurrencies.
 - Anonymized transactions using zerocoin technology
 - 100% Proof of Stake 3.0 Consensus protocol, allowing very low transaction fees and energy expenditure, and staking rewards to all participants in the network
 - Masternode technology used to secure the network and provide the above features, each Masternode is secured
-  with collateral of 10K PHR
+  with collateral of 10K REEX
 - Decentralized blockchain voting utilizing Masternode technology to form a DAO. The blockchain will distribute monthly treasury funds based on successful proposals submitted by the community and voted on by the DAO.
 
-17.6M phore was produced for swapping. 500k were mined 1-200 blocks to bring that amount to 18.1M PHR, the amount needed for the swap.
+17.6M retrex was produced for swapping. 500k were mined 1-200 blocks to bring that amount to 18.1M REEX, the amount needed for the swap.
 
-Since then, the Phore repository has been rebaselined to show the fork relationship properly.
+Since then, the Retrex repository has been rebaselined to show the fork relationship properly.
 
 ## BCT Thread ##
 
 https://bitcointalk.org/index.php?topic=2307909.0
 
-Rebrand from KryptKoin [KTK] to Phore [PHR]
+Rebrand from KryptKoin [KTK] to Retrex [REEX]
 
 ## Coin Specs ##
 <table>
@@ -32,10 +32,10 @@ Rebrand from KryptKoin [KTK] to Phore [PHR]
 
 <table>
 <th>Block Height</th><th>Reward</th><th>Masternodes</th><th>Stakers</th>
-<tr><td><= 775,600</td><td>7 PHR</td><td>4.2 PHR</td><td>2.8 PHR</td></tr>
-<tr><td>775,601-1,043,999</td><td>4.5 PHR</td><td>2.7 PHR</td><td>1.8 PHR</td></tr>
-<tr><td>1,044,000-1,562,398</td><td>3.6 PHR</td><td>2.16 PHR</td><td>1.44 PHR</td></tr>
-<tr><td>> 1,562,399</td><td>2.7 PHR</td><td>1.62 PHR</td><td>1.08 PHR</td></tr>
+<tr><td><= 775,600</td><td>7 REEX</td><td>4.2 REEX</td><td>2.8 REEX</td></tr>
+<tr><td>775,601-1,043,999</td><td>4.5 REEX</td><td>2.7 REEX</td><td>1.8 REEX</td></tr>
+<tr><td>1,044,000-1,562,398</td><td>3.6 REEX</td><td>2.16 REEX</td><td>1.44 REEX</td></tr>
+<tr><td>> 1,562,399</td><td>2.7 REEX</td><td>1.62 REEX</td><td>1.08 REEX</td></tr>
 </table>
 
-The Phore development budget is up to a maximum of 3 PHR per block, paid out based on approved proposals as voted on by the Phore masternode owners through the community governance process.
+The Retrex development budget is up to a maximum of 3 REEX per block, paid out based on approved proposals as voted on by the Retrex masternode owners through the community governance process.

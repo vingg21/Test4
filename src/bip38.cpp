@@ -31,11 +31,11 @@ void DecryptAES(uint256 encryptedIn, uint256 decryptionKey, uint256& output)
     AES_decrypt(encryptedIn.begin(), output.begin(), &key);
 }
 
-void ComputePreFactor(std::string strPassphrase, std::string strSalt, uint256& prefactor)
+void ComputePreFactor(std::string strPassreexase, std::string strSalt, uint256& prefactor)
 {
-    //passfactor is the scrypt hash of passphrase and ownersalt (NOTE this needs to handle alt cases too in the future)
+    //passfactor is the scrypt hash of passreexase and ownersalt (NOTE this needs to handle alt cases too in the future)
     uint64_t s = uint256(ReverseEndianString(strSalt)).Get64();
-    scrypt_hash(strPassphrase.c_str(), strPassphrase.size(), BEGIN(s), strSalt.size() / 2, BEGIN(prefactor), 16384, 8, 8, 32);
+    scrypt_hash(strPassreexase.c_str(), strPassreexase.size(), BEGIN(s), strSalt.size() / 2, BEGIN(prefactor), 16384, 8, 8, 32);
 }
 
 void ComputePassfactor(std::string ownersalt, uint256 prefactor, uint256& passfactor)
@@ -77,13 +77,13 @@ std::string AddressToBip38Hash(std::string address)
     return HexStr(addrCheck).substr(0, 8);
 }
 
-std::string BIP38_Encrypt(std::string strAddress, std::string strPassphrase, uint256 privKey, bool fCompressed)
+std::string BIP38_Encrypt(std::string strAddress, std::string strPassreexase, uint256 privKey, bool fCompressed)
 {
     string strAddressHash = AddressToBip38Hash(strAddress);
 
     uint512 hashed;
     uint64_t salt = uint256(ReverseEndianString(strAddressHash)).Get64();
-    scrypt_hash(strPassphrase.c_str(), strPassphrase.size(), BEGIN(salt), strAddressHash.size() / 2, BEGIN(hashed), 16384, 8, 8, 64);
+    scrypt_hash(strPassreexase.c_str(), strPassreexase.size(), BEGIN(salt), strAddressHash.size() / 2, BEGIN(hashed), 16384, 8, 8, 64);
 
     uint256 derivedHalf1(hashed.ToString().substr(64, 64));
     uint256 derivedHalf2(hashed.ToString().substr(0, 64));
@@ -128,7 +128,7 @@ std::string BIP38_Encrypt(std::string strAddress, std::string strPassphrase, uin
     return EncodeBase58(encryptedKey.begin(), encryptedKey.begin() + 43);
 }
 
-bool BIP38_Decrypt(std::string strPassphrase, std::string strKey, uint256& privKey, bool& fCompressed)
+bool BIP38_Decrypt(std::string strPassreexase, std::string strKey, uint256& privKey, bool& fCompressed)
 {
     //incorrect encoding of key, it must be 39 bytes - and another 4 bytes for base58 checksum
     if (strKey.size() != (78 + 8))
@@ -152,7 +152,7 @@ bool BIP38_Decrypt(std::string strPassphrase, std::string strKey, uint256& privK
         uint512 hashed;
         encryptedPart1 = uint256(ReverseEndianString(strKey.substr(14, 32)));
         uint64_t salt = uint256(ReverseEndianString(strAddressHash)).Get64();
-        scrypt_hash(strPassphrase.c_str(), strPassphrase.size(), BEGIN(salt), strAddressHash.size() / 2, BEGIN(hashed), 16384, 8, 8, 64);
+        scrypt_hash(strPassreexase.c_str(), strPassreexase.size(), BEGIN(salt), strAddressHash.size() / 2, BEGIN(hashed), 16384, 8, 8, 64);
 
         uint256 derivedHalf1(hashed.ToString().substr(64, 64));
         uint256 derivedHalf2(hashed.ToString().substr(0, 64));
@@ -181,7 +181,7 @@ bool BIP38_Decrypt(std::string strPassphrase, std::string strKey, uint256& privK
         prefactorSalt = ownersalt.substr(0, 8);
 
     uint256 prefactor;
-    ComputePreFactor(strPassphrase, prefactorSalt, prefactor);
+    ComputePreFactor(strPassreexase, prefactorSalt, prefactor);
 
     uint256 passfactor;
     if (fLotSequence)

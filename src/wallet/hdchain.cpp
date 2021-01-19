@@ -17,7 +17,7 @@ bool CHDChain::SetNull()
     fCrypted = false;
     vchSeed.clear();
     vchMnemonic.clear();
-    vchMnemonicPassphrase.clear();
+    vchMnemonicPassreexase.clear();
     mapAccounts.clear();
     // default blank account
     mapAccounts.insert(std::pair<uint32_t, CHDAccount>(0, CHDAccount()));
@@ -45,11 +45,11 @@ void CHDChain::Debug(std::string strName) const
             std::cout << __func__ << ": ---" << strName << "---" << std::endl;
     if (fCrypted) {
         std::cout << "mnemonic: ***CRYPTED***" << std::endl;
-        std::cout << "mnemonicpassphrase: ***CRYPTED***" << std::endl;
+        std::cout << "mnemonicpassreexase: ***CRYPTED***" << std::endl;
         std::cout << "seed: ***CRYPTED***" << std::endl;
     } else {
         std::cout << "mnemonic: " << std::string(vchMnemonic.begin(), vchMnemonic.end()).c_str() << std::endl;
-        std::cout << "mnemonicpassphrase: " << std::string(vchMnemonicPassphrase.begin(), vchMnemonicPassphrase.end()).c_str() << std::endl;
+        std::cout << "mnemonicpassreexase: " << std::string(vchMnemonicPassreexase.begin(), vchMnemonicPassreexase.end()).c_str() << std::endl;
         std::cout << "seed: " << HexStr(vchSeed).c_str() << std::endl;
 
         CExtKey extkey;
@@ -69,12 +69,12 @@ void CHDChain::Debug(std::string strName) const
     );
 }
 
-bool CHDChain::SetMnemonic(const SecureVector& vchMnemonic, const SecureVector& vchMnemonicPassphrase, bool fUpdateID)
+bool CHDChain::SetMnemonic(const SecureVector& vchMnemonic, const SecureVector& vchMnemonicPassreexase, bool fUpdateID)
 {
-    return SetMnemonic(SecureString(vchMnemonic.begin(), vchMnemonic.end()), SecureString(vchMnemonicPassphrase.begin(), vchMnemonicPassphrase.end()), fUpdateID);
+    return SetMnemonic(SecureString(vchMnemonic.begin(), vchMnemonic.end()), SecureString(vchMnemonicPassreexase.begin(), vchMnemonicPassreexase.end()), fUpdateID);
 }
 
-bool CHDChain::SetMnemonic(const SecureString& ssMnemonic, const SecureString& ssMnemonicPassphrase, bool fUpdateID)
+bool CHDChain::SetMnemonic(const SecureString& ssMnemonic, const SecureString& ssMnemonicPassreexase, bool fUpdateID)
 {
     SecureString ssMnemonicTmp = ssMnemonic;
 
@@ -89,42 +89,42 @@ bool CHDChain::SetMnemonic(const SecureString& ssMnemonic, const SecureString& s
             std::string ssMnemonicTmp2 = join(ssMnemonicTmp3," ");
             ssMnemonicTmp = SecureString(ssMnemonicTmp2.begin(), ssMnemonicTmp2.end());
         }
-        // NOTE: default mnemonic passphrase is an empty string
+        // NOTE: default mnemonic passreexase is an empty string
 
         // printf("mnemonic: %s\n", ssMnemonicTmp.c_str());
         if (!CMnemonic::Check(ssMnemonicTmp)) {
             throw std::runtime_error(std::string(__func__) + ": invalid mnemonic: `" + std::string(ssMnemonicTmp.c_str()) + "`");
         }
 
-        CMnemonic::ToSeed(ssMnemonicTmp, ssMnemonicPassphrase, vchSeed);
+        CMnemonic::ToSeed(ssMnemonicTmp, ssMnemonicPassreexase, vchSeed);
         id = GetSeedHash();
     }
 
     vchMnemonic = SecureVector(ssMnemonicTmp.begin(), ssMnemonicTmp.end());
-    vchMnemonicPassphrase = SecureVector(ssMnemonicPassphrase.begin(), ssMnemonicPassphrase.end());
+    vchMnemonicPassreexase = SecureVector(ssMnemonicPassreexase.begin(), ssMnemonicPassreexase.end());
 
     return !IsNull();
 }
 
-bool CHDChain::GetMnemonic(SecureVector& vchMnemonicRet, SecureVector& vchMnemonicPassphraseRet) const
+bool CHDChain::GetMnemonic(SecureVector& vchMnemonicRet, SecureVector& vchMnemonicPassreexaseRet) const
 {
     // mnemonic was not set, fail
     if (vchMnemonic.empty())
         return false;
 
     vchMnemonicRet = vchMnemonic;
-    vchMnemonicPassphraseRet = vchMnemonicPassphrase;
+    vchMnemonicPassreexaseRet = vchMnemonicPassreexase;
     return true;
 }
 
-bool CHDChain::GetMnemonic(SecureString& ssMnemonicRet, SecureString& ssMnemonicPassphraseRet) const
+bool CHDChain::GetMnemonic(SecureString& ssMnemonicRet, SecureString& ssMnemonicPassreexaseRet) const
 {
     // mnemonic was not set, fail
     if (vchMnemonic.empty())
         return false;
 
     ssMnemonicRet = SecureString(vchMnemonic.begin(), vchMnemonic.end());
-    ssMnemonicPassphraseRet = SecureString(vchMnemonicPassphrase.begin(), vchMnemonicPassphrase.end());
+    ssMnemonicPassreexaseRet = SecureString(vchMnemonicPassreexase.begin(), vchMnemonicPassreexase.end());
 
     return true;
 }

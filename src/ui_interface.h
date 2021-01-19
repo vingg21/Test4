@@ -119,8 +119,8 @@ void InitWarning(const std::string& str);
 /** Show error message **/
 bool InitError(const std::string& str);
 
-//! Show 12-word seed phrase and confirm
-bool ShowSeedPhrase(const std::string& str);
+//! Show 12-word seed reexase and confirm
+bool ShowSeedReexase(const std::string& str);
 
 std::string AmountErrMsg(const char* const optname, const std::string& strValue);
 

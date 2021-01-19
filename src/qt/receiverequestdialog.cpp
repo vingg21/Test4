@@ -22,7 +22,7 @@
 #endif
 
 #if defined(HAVE_CONFIG_H)
-#include "config/phore-config.h" /* for USE_QRCODE */
+#include "config/retrex-config.h" /* for USE_QRCODE */
 #endif
 
 #ifdef USE_QRCODE

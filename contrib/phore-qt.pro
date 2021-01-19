@@ -85,7 +85,7 @@ HEADERS += src/activemasternode.h \
            src/crypter.h \
            src/obfuscation-relay.h \
            src/obfuscation.h \
-           src/phore-config.h \
+           src/retrex-config.h \
            src/db.h \
            src/eccryptoverify.h \
            src/ecwrapper.h \
@@ -143,7 +143,7 @@ HEADERS += src/activemasternode.h \
            src/compat/sanity.h \
            src/consensus/merkle.h \
            src/consensus/validation.h \
-           src/config/phore-config.h \
+           src/config/retrex-config.h \
            src/crypto/common.h \
            src/crypto/hmac_sha256.h \
            src/crypto/hmac_sha512.h \
@@ -178,7 +178,7 @@ HEADERS += src/activemasternode.h \
            src/primitives/transaction.h \
            src/qt/addressbookpage.h \
            src/qt/addresstablemodel.h \
-           src/qt/askpassphrasedialog.h \
+           src/qt/askpassreexasedialog.h \
            src/qt/bitcoinaddressvalidator.h \
            src/qt/bitcoinamountfield.h \
            src/qt/bitcoingui.h \
@@ -345,13 +345,13 @@ HEADERS += src/activemasternode.h \
            src/secp256k1/src/java/org_bitcoin_NativeSecp256k1.h \
            src/crypto/aes_helper.c \
            src/qt/bitcoinamountfield.moc \
-           src/qt/phore.moc \
+           src/qt/retrex.moc \
            src/qt/intro.moc \
            src/qt/overviewpage.moc \
            src/qt/rpcconsole.moc \
            src/secp256k1/src/secp256k1.c
 FORMS += src/qt/forms/addressbookpage.ui \
-         src/qt/forms/askpassphrasedialog.ui \
+         src/qt/forms/askpassreexasedialog.ui \
          src/qt/forms/coincontroldialog.ui \
          src/qt/forms/obfuscationconfig.ui \
          src/qt/forms/editaddressdialog.ui \
@@ -387,9 +387,9 @@ SOURCES += src/activemasternode.cpp \
            src/crypter.cpp \
            src/obfuscation-relay.cpp \
            src/obfuscation.cpp \
-           src/phore-cli.cpp \
-           src/phore-tx.cpp \
-           src/phore.cpp \
+           src/retrex-cli.cpp \
+           src/retrex-tx.cpp \
+           src/retrex.cpp \
            src/db.cpp \
            src/eccryptoverify.cpp \
            src/ecwrapper.cpp \
@@ -477,7 +477,7 @@ SOURCES += src/activemasternode.cpp \
            src/primitives/transaction.cpp \
            src/qt/addressbookpage.cpp \
            src/qt/addresstablemodel.cpp \
-           src/qt/askpassphrasedialog.cpp \
+           src/qt/askpassreexasedialog.cpp \
            src/qt/bitcoinaddressvalidator.cpp \
            src/qt/bitcoinamountfield.cpp \
            src/qt/bitcoingui.cpp \
@@ -487,8 +487,8 @@ SOURCES += src/activemasternode.cpp \
            src/qt/coincontroltreewidget.cpp \
            src/qt/csvmodelwriter.cpp \
            src/qt/obfuscationconfig.cpp \
-           src/qt/phore.cpp \
-           src/qt/phorestrings.cpp \
+           src/qt/retrex.cpp \
+           src/qt/retrexstrings.cpp \
            src/qt/editaddressdialog.cpp \
            src/qt/guiutil.cpp \
            src/qt/intro.cpp \
@@ -566,7 +566,7 @@ SOURCES += src/activemasternode.cpp \
            src/test/sighash_tests.cpp \
            src/test/sigopcount_tests.cpp \
            src/test/skiplist_tests.cpp \
-           src/test/test_phore.cpp \
+           src/test/test_retrex.cpp \
            src/test/timedata_tests.cpp \
            src/test/transaction_tests.cpp \
            src/test/uint256_tests.cpp \
@@ -657,21 +657,21 @@ SOURCES += src/activemasternode.cpp \
            src/leveldb/helpers/memenv/memenv.cc \
            src/leveldb/helpers/memenv/memenv_test.cc \
            src/secp256k1/src/java/org_bitcoin_NativeSecp256k1.c
-RESOURCES += src/qt/phore.qrc src/qt/phore_locale.qrc
+RESOURCES += src/qt/retrex.qrc src/qt/retrex_locale.qrc
 
-TRANSLATIONS += src/qt/locale/phore_bg.ts \
-                src/qt/locale/phore_de.ts \
-                src/qt/locale/phore_en.ts \
-                src/qt/locale/phore_es.ts \
-                src/qt/locale/phore_fi.ts \
-                src/qt/locale/phore_fr.ts \
-                src/qt/locale/phore_it.ts \
-                src/qt/locale/phore_ja.ts \
-                src/qt/locale/phore_pl.ts \
-                src/qt/locale/phore_pt.ts \
-                src/qt/locale/phore_ru.ts \
-                src/qt/locale/phore_sk.ts \
-                src/qt/locale/phore_sv.ts \
-                src/qt/locale/phore_vi.ts \
-                src/qt/locale/phore_zh_CN.ts \
-                src/qt/locale/phore_zh_TW.ts
+TRANSLATIONS += src/qt/locale/retrex_bg.ts \
+                src/qt/locale/retrex_de.ts \
+                src/qt/locale/retrex_en.ts \
+                src/qt/locale/retrex_es.ts \
+                src/qt/locale/retrex_fi.ts \
+                src/qt/locale/retrex_fr.ts \
+                src/qt/locale/retrex_it.ts \
+                src/qt/locale/retrex_ja.ts \
+                src/qt/locale/retrex_pl.ts \
+                src/qt/locale/retrex_pt.ts \
+                src/qt/locale/retrex_ru.ts \
+                src/qt/locale/retrex_sk.ts \
+                src/qt/locale/retrex_sv.ts \
+                src/qt/locale/retrex_vi.ts \
+                src/qt/locale/retrex_zh_CN.ts \
+                src/qt/locale/retrex_zh_TW.ts

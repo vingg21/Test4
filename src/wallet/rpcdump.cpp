@@ -82,10 +82,10 @@ UniValue importprivkey(const UniValue& params, bool fHelp)
 {
     if (fHelp || params.size() < 1 || params.size() > 3)
         throw runtime_error(
-            "importprivkey \"phoreprivkey\" ( \"label\" rescan )\n"
+            "importprivkey \"retrexprivkey\" ( \"label\" rescan )\n"
             "\nAdds a private key (as returned by dumpprivkey) to your wallet.\n"
             "\nArguments:\n"
-            "1. \"phoreprivkey\"   (string, required) The private key (see dumpprivkey)\n"
+            "1. \"retrexprivkey\"   (string, required) The private key (see dumpprivkey)\n"
             "2. \"label\"            (string, optional, default=\"\") An optional label\n"
             "3. rescan               (boolean, optional, default=true) Rescan the wallet for transactions\n"
             "\nNote: This call can take minutes to complete if rescan is true.\n"
@@ -230,7 +230,7 @@ UniValue importaddress(const UniValue& params, bool fHelp)
             throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, "Cannot use the p2sh flag with an address - use a script instead");
         ImportAddress(DecodeDestination(params[0].get_str()), strLabel);
     } else {
-        throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, "Invalid Phore address or script");
+        throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, "Invalid Retrex address or script");
     }
 
     if (fRescan)
@@ -395,11 +395,11 @@ UniValue dumpprivkey(const UniValue& params, bool fHelp)
 {
     if (fHelp || params.size() != 1)
         throw runtime_error(
-            "dumpprivkey \"phoreaddress\"\n"
-            "\nReveals the private key corresponding to 'phoreaddress'.\n"
+            "dumpprivkey \"retrexaddress\"\n"
+            "\nReveals the private key corresponding to 'retrexaddress'.\n"
             "Then the importprivkey can be used with this output\n"
             "\nArguments:\n"
-            "1. \"phoreaddress\"   (string, required) The phore address for the private key\n"
+            "1. \"retrexaddress\"   (string, required) The retrex address for the private key\n"
             "\nResult:\n"
             "\"key\"                (string) The private key\n"
             "\nExamples:\n"
@@ -414,7 +414,7 @@ UniValue dumpprivkey(const UniValue& params, bool fHelp)
 
     string strAddress = params[0].get_str();
     if (!IsValidDestinationString(strAddress))
-        throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, "Invalid Phore address");
+        throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, "Invalid Retrex address");
     const CTxDestination dest = DecodeDestination(strAddress);
     auto keyid = GetKeyForDestination(*pwalletMain, dest);
     if (keyid.IsNull()) {
@@ -439,7 +439,7 @@ UniValue dumphdinfo(const UniValue& params, bool fHelp)
                 "{\n"
                 "  \"hdseed\": \"seed\",                    (string) The HD seed (bip32, in hex)\n"
                 "  \"mnemonic\": \"words\",                 (string) The mnemonic for this HD wallet (bip39, english words) \n"
-                "  \"mnemonicpassphrase\": \"passphrase\",  (string) The mnemonic passphrase for this HD wallet (bip39)\n"
+                "  \"mnemonicpassreexase\": \"passreexase\",  (string) The mnemonic passreexase for this HD wallet (bip39)\n"
                 "}\n"
                 "\nExamples:\n"
                 + HelpExampleCli("dumphdinfo", "")
@@ -458,13 +458,13 @@ UniValue dumphdinfo(const UniValue& params, bool fHelp)
         throw JSONRPCError(RPC_INTERNAL_ERROR, "Cannot decrypt HD seed");
 
     SecureString ssMnemonic;
-    SecureString ssMnemonicPassphrase;
-    hdChainCurrent.GetMnemonic(ssMnemonic, ssMnemonicPassphrase);
+    SecureString ssMnemonicPassreexase;
+    hdChainCurrent.GetMnemonic(ssMnemonic, ssMnemonicPassreexase);
 
     UniValue obj(UniValue::VOBJ);
     obj.push_back(Pair("hdseed", HexStr(hdChainCurrent.GetSeed())));
     obj.push_back(Pair("mnemonic", ssMnemonic.c_str()));
-    obj.push_back(Pair("mnemonicpassphrase", ssMnemonicPassphrase.c_str()));
+    obj.push_back(Pair("mnemonicpassreexase", ssMnemonicPassreexase.c_str()));
 
     return obj;
 }
@@ -475,7 +475,7 @@ UniValue dumpwallet(const UniValue& params, bool fHelp)
         throw runtime_error(
                 "dumpwallet \"filename\"\n"
                 "\nDumps all wallet keys in a human-readable format.\n" +
-                HelpRequiringPassphrase() + "\n"
+                HelpRequiringPassreexase() + "\n"
 
                                             "\nArguments:\n"
                                             "1. \"filename\"    (string, required) The filename\n"
@@ -504,7 +504,7 @@ UniValue dumpwallet(const UniValue& params, bool fHelp)
     mapKeyBirth.clear();
     std::sort(vKeyBirth.begin(), vKeyBirth.end());
     // produce output
-    file << strprintf("# Wallet dump created by PHORE %s (%s)\n", CLIENT_BUILD, CLIENT_DATE);
+    file << strprintf("# Wallet dump created by RETREX %s (%s)\n", CLIENT_BUILD, CLIENT_DATE);
     file << strprintf("# * Created on %s\n", EncodeDumpTime(GetTime()));
     file << strprintf("# * Best block at time of backup was %i (%s),\n", chainActive.Height(), chainActive.Tip()->GetBlockHash().ToString());
     file << strprintf("#   mined on %s\n", EncodeDumpTime(chainActive.Tip()->GetBlockTime()));
@@ -517,10 +517,10 @@ UniValue dumpwallet(const UniValue& params, bool fHelp)
             throw JSONRPCError(RPC_INTERNAL_ERROR, "Cannot decrypt HD chain");
 
         SecureString ssMnemonic;
-        SecureString ssMnemonicPassphrase;
-        hdChainCurrent.GetMnemonic(ssMnemonic, ssMnemonicPassphrase);
+        SecureString ssMnemonicPassreexase;
+        hdChainCurrent.GetMnemonic(ssMnemonic, ssMnemonicPassreexase);
         file << "# mnemonic: " << ssMnemonic << "\n";
-        file << "# mnemonic passphrase: " << ssMnemonicPassphrase << "\n\n";
+        file << "# mnemonic passreexase: " << ssMnemonicPassreexase << "\n\n";
         SecureVector vchSeed = hdChainCurrent.GetSeed();
         file << "# HD seed: " << HexStr(vchSeed) << "\n\n";
         CExtKey masterKey;
@@ -574,9 +574,9 @@ UniValue dumpallprivatekeys(const UniValue& params, bool fHelp)
             "dumpallprivatekeys \"filename\"\n"
             "\nDumps all wallet private keys in an unencrypted, human-readable format.\n"
             "\nSCAM WARNING: If anyone asks you to run this command and send them the file,\n"
-            "they will have FULL ACCESS to STEAL your Phore. Giving this file to someone\n"
-            "is the same thing as giving them all of the Phore in your wallet! Never send\n"
-            "this file to ANYONE that you do not trust with all of your Phore!!!\n"
+            "they will have FULL ACCESS to STEAL your Retrex. Giving this file to someone\n"
+            "is the same thing as giving them all of the Retrex in your wallet! Never send\n"
+            "this file to ANYONE that you do not trust with all of your Retrex!!!\n"
            "\nArguments:\n"
             "1. \"filename\"    (string, required) The filename\n"
             "\nExamples:\n" +
@@ -605,7 +605,7 @@ UniValue dumpallprivatekeys(const UniValue& params, bool fHelp)
     std::sort(vKeyBirth.begin(), vKeyBirth.end());
 
     // produce output
-    file << strprintf("# Wallet private key dump file created by Phore %s (%s)\n", CLIENT_BUILD, CLIENT_DATE);
+    file << strprintf("# Wallet private key dump file created by Retrex %s (%s)\n", CLIENT_BUILD, CLIENT_DATE);
     file << strprintf("# * Created on %s\n", EncodeDumpTime(GetTime()));
     file << strprintf("# * Best block at time of backup was %i (%s),\n", chainActive.Height(), chainActive.Tip()->GetBlockHash().ToString());
     file << strprintf("#   mined on %s\n", EncodeDumpTime(chainActive.Tip()->GetBlockTime()));
@@ -636,11 +636,11 @@ UniValue bip38encrypt(const UniValue& params, bool fHelp)
 {
     if (fHelp || params.size() != 2)
         throw runtime_error(
-            "bip38encrypt \"phoreaddress\"\n"
-            "\nEncrypts a private key corresponding to 'phoreaddress'.\n"
+            "bip38encrypt \"retrexaddress\"\n"
+            "\nEncrypts a private key corresponding to 'retrexaddress'.\n"
             "\nArguments:\n"
-            "1. \"phoreaddress\"   (string, required) The phore address for the private key (you must hold the key already)\n"
-            "2. \"passphrase\"   (string, required) The passphrase you want the private key to be encrypted with - Valid special chars: !#$%&'()*+,-./:;<=>?`{|}~ \n"
+            "1. \"retrexaddress\"   (string, required) The retrex address for the private key (you must hold the key already)\n"
+            "2. \"passreexase\"   (string, required) The passreexase you want the private key to be encrypted with - Valid special chars: !#$%&'()*+,-./:;<=>?`{|}~ \n"
             "\nResult:\n"
             "\"key\"                (string) The encrypted private key\n"
             "\nExamples:\n");
@@ -650,10 +650,10 @@ UniValue bip38encrypt(const UniValue& params, bool fHelp)
     EnsureWalletIsUnlocked();
 
     string strAddress = params[0].get_str();
-    string strPassphrase = params[1].get_str();
+    string strPassreexase = params[1].get_str();
 
     if (!IsValidDestinationString(strAddress))
-        throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, "Invalid Phore address");
+        throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, "Invalid Retrex address");
     CTxDestination address = DecodeDestination(strAddress);
     CKeyID *keyID = boost::get<CKeyID>(&address);
     if (!keyID)
@@ -663,7 +663,7 @@ UniValue bip38encrypt(const UniValue& params, bool fHelp)
         throw JSONRPCError(RPC_WALLET_ERROR, "Private key for address " + strAddress + " is not known");
 
     uint256 privKey = vchSecret.GetPrivKey_256();
-    string encryptedOut = BIP38_Encrypt(strAddress, strPassphrase, privKey, vchSecret.IsCompressed());
+    string encryptedOut = BIP38_Encrypt(strAddress, strPassreexase, privKey, vchSecret.IsCompressed());
 
     UniValue result(UniValue::VOBJ);
     result.push_back(Pair("Addess", strAddress));
@@ -676,11 +676,11 @@ UniValue bip38decrypt(const UniValue& params, bool fHelp)
 {
     if (fHelp || params.size() != 2)
         throw runtime_error(
-            "bip38decrypt \"phoreaddress\"\n"
+            "bip38decrypt \"retrexaddress\"\n"
             "\nDecrypts and then imports password protected private key.\n"
             "\nArguments:\n"
             "1. \"encryptedkey\"   (string, required) The encrypted private key\n"
-            "2. \"passphrase\"   (string, required) The passphrase you want the private key to be encrypted with\n"
+            "2. \"passreexase\"   (string, required) The passreexase you want the private key to be encrypted with\n"
 
             "\nResult:\n"
             "\"key\"                (string) The decrypted private key\n"
@@ -690,13 +690,13 @@ UniValue bip38decrypt(const UniValue& params, bool fHelp)
 
     EnsureWalletIsUnlocked();
 
-    /** Collect private key and passphrase **/
+    /** Collect private key and passreexase **/
     string strKey = params[0].get_str();
-    string strPassphrase = params[1].get_str();
+    string strPassreexase = params[1].get_str();
 
     uint256 privKey;
     bool fCompressed;
-    if (!BIP38_Decrypt(strPassphrase, strKey, privKey, fCompressed))
+    if (!BIP38_Decrypt(strPassreexase, strKey, privKey, fCompressed))
         throw JSONRPCError(RPC_WALLET_ERROR, "Failed To Decrypt");
 
     UniValue result(UniValue::VOBJ);

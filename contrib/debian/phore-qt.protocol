@@ -1,6 +1,6 @@
 [Protocol]
-exec=phore-qt '%u'
-protocol=phore
+exec=retrex-qt '%u'
+protocol=retrex
 input=none
 output=none
 helper=true

@@ -62,12 +62,12 @@
         <translation>Prijímacia adresa</translation>
     </message>
     <message>
-        <source>These are your Phore addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Toto sú vaše Phore adresy na odosielanie platieb. Pred odoslaním vždy skontrolujte výšku a adresu prijemcu.</translation>
+        <source>These are your Retrex addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Toto sú vaše Retrex adresy na odosielanie platieb. Pred odoslaním vždy skontrolujte výšku a adresu prijemcu.</translation>
     </message>
     <message>
-        <source>These are your Phore addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Toto sú vaše Phore adresy na prijímanie platieb. Pre každú transakciu sa odporúča použiť novú prijímaciu adresu.</translation>
+        <source>These are your Retrex addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>Toto sú vaše Retrex adresy na prijímanie platieb. Pre každú transakciu sa odporúča použiť novú prijímaciu adresu.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -114,21 +114,21 @@
     </message>
 </context>
 <context>
-    <name>AskPassphraseDialog</name>
+    <name>AskPassreexaseDialog</name>
     <message>
-        <source>Passphrase Dialog</source>
+        <source>Passreexase Dialog</source>
         <translation>Okno prístupovej frázy</translation>
     </message>
     <message>
-        <source>Enter passphrase</source>
+        <source>Enter passreexase</source>
         <translation>Zadajte prístupovú frázu</translation>
     </message>
     <message>
-        <source>New passphrase</source>
+        <source>New passreexase</source>
         <translation>Nová prístupová fráza</translation>
     </message>
     <message>
-        <source>Repeat new passphrase</source>
+        <source>Repeat new passreexase</source>
         <translation>Zopakujte prístupovú frázu</translation>
     </message>
     <message>
@@ -140,7 +140,7 @@
         <translation>Len pre anonymizáciu a staking</translation>
     </message>
     <message>
-        <source>Enter the new passphrase to the wallet.&lt;br/&gt;Please use a passphrase of &lt;b&gt;ten or more random characters&lt;/b&gt;, or &lt;b&gt;eight or more words&lt;/b&gt;.</source>
+        <source>Enter the new passreexase to the wallet.&lt;br/&gt;Please use a passreexase of &lt;b&gt;ten or more random characters&lt;/b&gt;, or &lt;b&gt;eight or more words&lt;/b&gt;.</source>
         <translation>Zadajte novú prístupovú frázu do peňaženky. &lt;br/&gt; Použite prístupovú frázu &lt;b&gt;, ktorá má desať alebo viac náhodných znakov &lt;/ b&gt; alebo &lt;b&gt; osem alebo viac slov &lt;/ b&gt;.</translation>
     </message>
     <message>
@@ -148,7 +148,7 @@
         <translation>Šifrovať peňaženku</translation>
     </message>
     <message>
-        <source>This operation needs your wallet passphrase to unlock the wallet.</source>
+        <source>This operation needs your wallet passreexase to unlock the wallet.</source>
         <translation>Táto operácia potrebuje prístupovú frázu peňaženky na odomknutie peňaženky.</translation>
     </message>
     <message>
@@ -156,7 +156,7 @@
         <translation>Odomknúť peňaženku</translation>
     </message>
     <message>
-        <source>This operation needs your wallet passphrase to decrypt the wallet.</source>
+        <source>This operation needs your wallet passreexase to decrypt the wallet.</source>
         <translation>Táto operácia potrebuje prístupovú frázu peňaženky na dešifrovanie peňaženky.</translation>
     </message>
     <message>
@@ -164,11 +164,11 @@
         <translation>Dešifrovať peňaženku</translation>
     </message>
     <message>
-        <source>Change passphrase</source>
+        <source>Change passreexase</source>
         <translation>Zmeniť prístupovú frázu</translation>
     </message>
     <message>
-        <source>Enter the old and new passphrase to the wallet.</source>
+        <source>Enter the old and new passreexase to the wallet.</source>
         <translation>Zadajte starú a novú prístupovú frázu do peňaženky.</translation>
     </message>
     <message>
@@ -176,16 +176,16 @@
         <translation>Potvrďte šifrovanie peňaženky</translation>
     </message>
     <message>
-        <source>Phore will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your PHRs from being stolen by malware infecting your computer.</source>
-        <translation>Phore sa teraz ukončí, aby dokončil proces šifrovania. Nezabudnite, že šifrovanie peňaženky nemôže úplne ochrániť vaše PHR pred odcudzením škodlivým softvérom, ktorý infikuje váš počítač.</translation>
+        <source>Retrex will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your REEXs from being stolen by malware infecting your computer.</source>
+        <translation>Retrex sa teraz ukončí, aby dokončil proces šifrovania. Nezabudnite, že šifrovanie peňaženky nemôže úplne ochrániť vaše REEX pred odcudzením škodlivým softvérom, ktorý infikuje váš počítač.</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
         <translation>Naozaj chcete zašifrovať svoju peňaženku?</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR PHR&lt;/b&gt;!</source>
-        <translation>Upozornenie: Ak zašifrujete svoju peňaženku a stratíte svoju prístupovú frázu, &lt;b&gt; PRÍDETE O VŠETKY PHR &lt;/ b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passreexase, you will &lt;b&gt;LOSE ALL OF YOUR REEX&lt;/b&gt;!</source>
+        <translation>Upozornenie: Ak zašifrujete svoju peňaženku a stratíte svoju prístupovú frázu, &lt;b&gt; PRÍDETE O VŠETKY REEX &lt;/ b&gt;!</translation>
     </message>
     <message>
         <source>Wallet encrypted</source>
@@ -204,7 +204,7 @@
         <translation>Šifrovanie peňaženky zlyhalo kvôli internej chybe. Vaša peňaženka nebola zašifrovaná.</translation>
     </message>
     <message>
-        <source>The supplied passphrases do not match.</source>
+        <source>The supplied passreexases do not match.</source>
         <translation>Zadané prístupové frázy sa nezhodujú.</translation>
     </message>
     <message>
@@ -212,7 +212,7 @@
         <translation>Odomknutie peňaženky zlyhalo</translation>
     </message>
     <message>
-        <source>The passphrase entered for the wallet decryption was incorrect.</source>
+        <source>The passreexase entered for the wallet decryption was incorrect.</source>
         <translation>Zadaná prístupová fráza pre dešifrovanie peňaženky bola nesprávna.</translation>
     </message>
     <message>
@@ -220,7 +220,7 @@
         <translation>Dešifrovanie peňaženky zlyhalo</translation>
     </message>
     <message>
-        <source>Wallet passphrase was successfully changed.</source>
+        <source>Wallet passreexase was successfully changed.</source>
         <translation>Prístupová fráza pre peňaženku bola úspešne zmenená.</translation>
     </message>
     <message>
@@ -239,16 +239,16 @@
         <translation>BIP 38 Šifrovanie</translation>
     </message>
     <message>
-        <source>Enter a Phore Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
-        <translation>Zadajte adresu Phore, ktorú chcete zašifrovať pomocou BIP 38. Zadajte prístupovú frázu do stredného poľa. Stlačte šifrovanie na výpočet šifrovaného privátneho kľúča.</translation>
+        <source>Enter a Retrex Address that you would like to encrypt using BIP 38. Enter a passreexase in the middle box. Press encrypt to compute the encrypted private key.</source>
+        <translation>Zadajte adresu Retrex, ktorú chcete zašifrovať pomocou BIP 38. Zadajte prístupovú frázu do stredného poľa. Stlačte šifrovanie na výpočet šifrovaného privátneho kľúča.</translation>
     </message>
     <message>
         <source>Address:</source>
         <translation>Adresa:</translation>
     </message>
     <message>
-        <source>The Phore address to sign the message with</source>
-        <translation>Adresa Phore, ktorou chcete správu podpísať</translation>
+        <source>The Retrex address to sign the message with</source>
+        <translation>Adresa Retrex, ktorou chcete správu podpísať</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -267,7 +267,7 @@
         <translation>Alt+P</translation>
     </message>
     <message>
-        <source>Passphrase: </source>
+        <source>Passreexase: </source>
         <translation>Prístupová fráza:</translation>
     </message>
     <message>
@@ -279,8 +279,8 @@
         <translation>Skopírujte aktuálny podpis do schránky</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this Phore address</source>
-        <translation>Podpíšte správu, aby ste preukázali, že ste vlastníkom tejto Phore adresy</translation>
+        <source>Sign the message to prove you own this Retrex address</source>
+        <translation>Podpíšte správu, aby ste preukázali, že ste vlastníkom tejto Retrex adresy</translation>
     </message>
     <message>
         <source>Encrypt &amp;Key</source>
@@ -299,16 +299,16 @@
         <translation>BIP 38 dešifrovanie</translation>
     </message>
     <message>
-        <source>Enter the BIP 38 encrypted private key. Enter the passphrase in the middle box. Click Decrypt Key to compute the private key. After the key is decrypted, clicking 'Import Address' will add this private key to the wallet.</source>
+        <source>Enter the BIP 38 encrypted private key. Enter the passreexase in the middle box. Click Decrypt Key to compute the private key. After the key is decrypted, clicking 'Import Address' will add this private key to the wallet.</source>
         <translation>Zadajte súkromný kľúč zašifrovaný BIP 38. Zadajte prístupovú frázu do stredného poľa. Kliknite na Dešifrovať kľúč, ak chcete vypočítať privátny kľúč. Po dešifrovaní kľúča pridáte do peňaženky tento súkromný kľúč kliknutím na položku 'Importovať adresu'.</translation>
     </message>
     <message>
-        <source>The Phore address the message was signed with</source>
-        <translation>Phore adresa, ktorou bola správa podpísaná</translation>
+        <source>The Retrex address the message was signed with</source>
+        <translation>Retrex adresa, ktorou bola správa podpísaná</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified Phore address</source>
-        <translation>Skontrolujte správu, aby ste sa uistili, že bola podpísaná zadanou Phore adresou</translation>
+        <source>Verify the message to ensure it was signed with the specified Retrex address</source>
+        <translation>Skontrolujte správu, aby ste sa uistili, že bola podpísaná zadanou Retrex adresou</translation>
     </message>
     <message>
         <source>Decrypt &amp;Key</source>
@@ -331,7 +331,7 @@
         <translation>Kliknite na tlačidlo "Dešifrovať kľúč" pre výpočet kľúča</translation>
     </message>
     <message>
-        <source>The entered passphrase is invalid. </source>
+        <source>The entered passreexase is invalid. </source>
         <translation>Zadaná prístupová fráza je neplatná.</translation>
     </message>
     <message>
@@ -363,7 +363,7 @@
         <translation>Dešifrovanie zlyhalo.</translation>
     </message>
     <message>
-        <source>Please check the key and passphrase and try again.</source>
+        <source>Please check the key and passreexase and try again.</source>
         <translation>Skontrolujte, prosím, kľúč a prístupovú frázu a skúste to znova.</translation>
     </message>
     <message>
@@ -470,11 +470,11 @@
         <translation>Zálohovať peňaženku na iné miesto</translation>
     </message>
     <message>
-        <source>&amp;Change Passphrase...</source>
+        <source>&amp;Change Passreexase...</source>
         <translation>Zmeniť prístupovú frázu...</translation>
     </message>
     <message>
-        <source>Change the passphrase used for wallet encryption</source>
+        <source>Change the passreexase used for wallet encryption</source>
         <translation>Zmeniť prístupovú frázu, ktorá bola použitá na šifrovanie peňaženky</translation>
     </message>
     <message>
@@ -598,16 +598,16 @@
         <translation>Panel nástrojov Záložky</translation>
     </message>
     <message>
-        <source>Phore Core</source>
-        <translation>Phore Core</translation>
+        <source>Retrex Core</source>
+        <translation>Retrex Core</translation>
     </message>
     <message>
-        <source>Send coins to a Phore address</source>
-        <translation>Odoslať mince na adresu Phore</translation>
+        <source>Send coins to a Retrex address</source>
+        <translation>Odoslať mince na adresu Retrex</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and phore: URIs)</source>
-        <translation>Vyžiadať platby (generuje QR kódy a phore: identifikátory URI)</translation>
+        <source>Request payments (generates QR codes and retrex: URIs)</source>
+        <translation>Vyžiadať platby (generuje QR kódy a retrex: identifikátory URI)</translation>
     </message>
     <message>
         <source>&amp;Masternodes</source>
@@ -618,31 +618,31 @@
         <translation>Prezrieť masternody</translation>
     </message>
     <message>
-        <source>&amp;About Phore Core</source>
-        <translation>O Phore Core</translation>
+        <source>&amp;About Retrex Core</source>
+        <translation>O Retrex Core</translation>
     </message>
     <message>
-        <source>Show information about Phore Core</source>
-        <translation>Zobraziť informácie o Phore Core</translation>
+        <source>Show information about Retrex Core</source>
+        <translation>Zobraziť informácie o Retrex Core</translation>
     </message>
     <message>
-        <source>Modify configuration options for Phore</source>
-        <translation>Zmeňte možnosti konfigurácie pre Phore</translation>
+        <source>Modify configuration options for Retrex</source>
+        <translation>Zmeňte možnosti konfigurácie pre Retrex</translation>
     </message>
     <message>
-        <source>Sign messages with your Phore addresses to prove you own them</source>
-        <translation>Podpíšte správy pomocou adresy Phore, aby ste preukázali, že ich vlastníte</translation>
+        <source>Sign messages with your Retrex addresses to prove you own them</source>
+        <translation>Podpíšte správy pomocou adresy Retrex, aby ste preukázali, že ich vlastníte</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified Phore addresses</source>
-        <translation>Overte správy, aby sa zabezpečilo, že boli podpísané zadanými Phore adresami</translation>
+        <source>Verify messages to ensure they were signed with specified Retrex addresses</source>
+        <translation>Overte správy, aby sa zabezpečilo, že boli podpísané zadanými Retrex adresami</translation>
     </message>
     <message>
         <source>&amp;BIP38 tool</source>
         <translation>BIP 38 Utilita</translation>
     </message>
     <message>
-        <source>Encrypt and decrypt private keys using a passphrase</source>
+        <source>Encrypt and decrypt private keys using a passreexase</source>
         <translation>Šifrovať a dešifrovať privátne kľúče pomocou prístupovej frázy</translation>
     </message>
     <message>
@@ -666,8 +666,8 @@
         <translation>Otvoriť konfiguračný súbor masternodu</translation>
     </message>
     <message>
-        <source>Open a Phore: URI or payment request</source>
-        <translation>Otvorte Phore: URI alebo žiadosť o platbu</translation>
+        <source>Open a Retrex: URI or payment request</source>
+        <translation>Otvorte Retrex: URI alebo žiadosť o platbu</translation>
     </message>
     <message>
         <source>&amp;Blockchain explorer</source>
@@ -678,12 +678,12 @@
         <translation>Okno blockchain prehliadača</translation>
     </message>
     <message>
-        <source>Show the Phore Core help message to get a list with possible Phore command-line options</source>
-        <translation>Zobraziť pomocnú správu programu Phore Core a získajte zoznam možností príkazového riadka Phore</translation>
+        <source>Show the Retrex Core help message to get a list with possible Retrex command-line options</source>
+        <translation>Zobraziť pomocnú správu programu Retrex Core a získajte zoznam možností príkazového riadka Retrex</translation>
     </message>
     <message>
-        <source>Phore Core client</source>
-        <translation>Phore Core klient</translation>
+        <source>Retrex Core client</source>
+        <translation>Retrex Core klient</translation>
     </message>
     <message>
         <source>Synchronizing with network...</source>
@@ -813,8 +813,8 @@ MultiSend: %1</translation>
         <translation>TextLabel</translation>
     </message>
     <message>
-        <source>Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (phore.conf).</source>
-        <translation>Nie všetky transakcie sa zobrazia. Ak chcete zobraziť všetky transakcie, musíte v konfiguračnom súbore (phore.conf) nastaviť txindex = 1.</translation>
+        <source>Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (retrex.conf).</source>
+        <translation>Nie všetky transakcie sa zobrazia. Ak chcete zobraziť všetky transakcie, musíte v konfiguračnom súbore (retrex.conf) nastaviť txindex = 1.</translation>
     </message>
 </context>
 <context>
@@ -904,15 +904,15 @@ MultiSend: %1</translation>
 <context>
     <name>HelpMessageDialog</name>
     <message>
-        <source>Phore Core</source>
-        <translation>Phore Core</translation>
+        <source>Retrex Core</source>
+        <translation>Retrex Core</translation>
     </message>
     </context>
 <context>
     <name>Intro</name>
     <message>
-        <source>Phore Core</source>
-        <translation>Phore Core</translation>
+        <source>Retrex Core</source>
+        <translation>Retrex Core</translation>
     </message>
     <message>
         <source>Error</source>
@@ -1136,8 +1136,8 @@ MultiSend: %1</translation>
 <context>
     <name>SignVerifyMessageDialog</name>
     <message>
-        <source>The Phore address to sign the message with</source>
-        <translation>Adresa Phore, ktorou chcete správu podpísať</translation>
+        <source>The Retrex address to sign the message with</source>
+        <translation>Adresa Retrex, ktorou chcete správu podpísať</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -1160,16 +1160,16 @@ MultiSend: %1</translation>
         <translation>Skopírujte aktuálny podpis do schránky</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this Phore address</source>
-        <translation>Podpíšte správu, aby ste preukázali, že ste vlastníkom tejto Phore adresy</translation>
+        <source>Sign the message to prove you own this Retrex address</source>
+        <translation>Podpíšte správu, aby ste preukázali, že ste vlastníkom tejto Retrex adresy</translation>
     </message>
     <message>
-        <source>The Phore address the message was signed with</source>
-        <translation>Phore adresa, ktorou bola správa podpísaná</translation>
+        <source>The Retrex address the message was signed with</source>
+        <translation>Retrex adresa, ktorou bola správa podpísaná</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified Phore address</source>
-        <translation>Skontrolujte správu, aby ste sa uistili, že bola podpísaná zadanou Phore adresou</translation>
+        <source>Verify the message to ensure it was signed with the specified Retrex address</source>
+        <translation>Skontrolujte správu, aby ste sa uistili, že bola podpísaná zadanou Retrex adresou</translation>
     </message>
     <message>
         <source>Reset all sign message fields</source>
@@ -1207,8 +1207,8 @@ MultiSend: %1</translation>
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>Phore Core</source>
-        <translation>Phore Core</translation>
+        <source>Retrex Core</source>
+        <translation>Retrex Core</translation>
     </message>
     </context>
 <context>
@@ -1303,10 +1303,10 @@ MultiSend: %1</translation>
     </message>
     </context>
 <context>
-    <name>ZPhrControlDialog</name>
+    <name>ZReexControlDialog</name>
     </context>
 <context>
-    <name>phore-core</name>
+    <name>retrex-core</name>
     <message>
         <source>Error</source>
         <translation>Chyba</translation>

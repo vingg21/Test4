@@ -225,10 +225,10 @@ bool CMnemonic::Check(SecureString mnemonic)
 }
 
 
-// passphrase must be at most 256 characters or code may crash
-void CMnemonic::ToSeed(SecureString mnemonic, SecureString passphrase, SecureVector& seedRet)
+// passreexase must be at most 256 characters or code may crash
+void CMnemonic::ToSeed(SecureString mnemonic, SecureString passreexase, SecureVector& seedRet)
 {
-  SecureString ssSalt = SecureString("mnemonic") + passphrase;
+  SecureString ssSalt = SecureString("mnemonic") + passreexase;
   SecureVector vchSalt(ssSalt.begin(), ssSalt.end());
   seedRet.resize(64);
   // int PKCS5_PBKDF2_HMAC(const char *pass, int passlen,

@@ -1,9 +1,9 @@
-// Copyright (c) 2017-2019 The PIVX developers
+// Copyright (c) 2017-2021 The PIVX developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef PHORE_STAKEINPUT_H
-#define PHORE_STAKEINPUT_H
+#ifndef RETREX_STAKEINPUT_H
+#define RETREX_STAKEINPUT_H
 
 #include "chain.h"
 #include "streams.h"
@@ -33,7 +33,7 @@ public:
     }
 };
 
-class CPhoreStake : public CStakeInput
+class CRetrexStake : public CStakeInput
 {
 private:
     CTransaction txFrom;
@@ -44,7 +44,7 @@ private:
     int nStakeModifierHeight = 0;
     int64_t nStakeModifierTime = 0;
 public:
-    CPhoreStake(){}
+    CRetrexStake(){}
 
     bool SetInput(CTransaction txPrev, unsigned int n);
 
@@ -60,4 +60,4 @@ public:
 };
 
 
-#endif //PHORE_STAKEINPUT_H
+#endif //RETREX_STAKEINPUT_H

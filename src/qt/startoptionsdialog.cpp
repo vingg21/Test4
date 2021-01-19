@@ -1,5 +1,5 @@
 #if defined(HAVE_CONFIG_H)
-#include <config/phore-config.h>
+#include <config/retrex-config.h>
 #endif
 
 #include <startoptionsdialog.h>

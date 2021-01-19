@@ -1,7 +1,7 @@
 // Copyright (c) 2014-2017 The Dash Core developers
 // Distributed under the MIT software license, see the accompanying
-#ifndef PHORE_HDCHAIN_H
-#define PHORE_HDCHAIN_H
+#ifndef RETREX_HDCHAIN_H
+#define RETREX_HDCHAIN_H
 
 #include "key.h"
 #include "sync.h"
@@ -38,7 +38,7 @@ private:
 
     SecureVector vchSeed;
     SecureVector vchMnemonic;
-    SecureVector vchMnemonicPassphrase;
+    SecureVector vchMnemonicPassreexase;
 
     std::map<uint32_t, CHDAccount> mapAccounts;
     // critical section to protect mapAccounts
@@ -53,7 +53,7 @@ public:
             fCrypted(other.fCrypted),
             vchSeed(other.vchSeed),
             vchMnemonic(other.vchMnemonic),
-            vchMnemonicPassphrase(other.vchMnemonicPassphrase),
+            vchMnemonicPassreexase(other.vchMnemonicPassreexase),
             mapAccounts(other.mapAccounts)
     {}
 
@@ -68,7 +68,7 @@ public:
         READWRITE(fCrypted);
         READWRITE(vchSeed);
         READWRITE(vchMnemonic);
-        READWRITE(vchMnemonicPassphrase);
+        READWRITE(vchMnemonicPassreexase);
         READWRITE(mapAccounts);
     }
 
@@ -84,7 +84,7 @@ public:
         swap(first.fCrypted, second.fCrypted);
         swap(first.vchSeed, second.vchSeed);
         swap(first.vchMnemonic, second.vchMnemonic);
-        swap(first.vchMnemonicPassphrase, second.vchMnemonicPassphrase);
+        swap(first.vchMnemonicPassreexase, second.vchMnemonicPassreexase);
         swap(first.mapAccounts, second.mapAccounts);
     }
     CHDChain& operator=(CHDChain from)
@@ -101,10 +101,10 @@ public:
 
     void Debug(std::string strName) const;
 
-    bool SetMnemonic(const SecureVector& vchMnemonic, const SecureVector& vchMnemonicPassphrase, bool fUpdateID);
-    bool SetMnemonic(const SecureString& ssMnemonic, const SecureString& ssMnemonicPassphrase, bool fUpdateID);
-    bool GetMnemonic(SecureVector& vchMnemonicRet, SecureVector& vchMnemonicPassphraseRet) const;
-    bool GetMnemonic(SecureString& ssMnemonicRet, SecureString& ssMnemonicPassphraseRet) const;
+    bool SetMnemonic(const SecureVector& vchMnemonic, const SecureVector& vchMnemonicPassreexase, bool fUpdateID);
+    bool SetMnemonic(const SecureString& ssMnemonic, const SecureString& ssMnemonicPassreexase, bool fUpdateID);
+    bool GetMnemonic(SecureVector& vchMnemonicRet, SecureVector& vchMnemonicPassreexaseRet) const;
+    bool GetMnemonic(SecureString& ssMnemonicRet, SecureString& ssMnemonicPassreexaseRet) const;
 
     bool SetSeed(const SecureVector& vchSeedIn, bool fUpdateID);
     SecureVector GetSeed() const;
@@ -150,4 +150,4 @@ public:
     std::string GetKeyPath() const;
 };
 
-#endif // PHORE_HDCHAIN_H
+#endif // RETREX_HDCHAIN_H

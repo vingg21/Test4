@@ -68,7 +68,7 @@ class TestNode():
             # Wait for up to 60 seconds for the RPC server to respond
             self.rpc_timeout = 60
         if binary is None:
-            self.binary = os.getenv("PHORED", "phored")
+            self.binary = os.getenv("RETREXD", "retrexd")
         else:
             self.binary = binary
         self.stderr = stderr
@@ -82,7 +82,7 @@ class TestNode():
         self.args = [self.binary, "-datadir=" + self.datadir, "-logtimemicros", "-debug", "-debugexclude=libevent", "-debugexclude=leveldb", "-mocktime=" + str(mocktime), "-uacomment=testnode%d" % i]
         #print(self.args)
 
-        self.cli = TestNodeCLI(os.getenv("PHORECLI", "phore-cli"), self.datadir)
+        self.cli = TestNodeCLI(os.getenv("RETREXCLI", "retrex-cli"), self.datadir)
         self.use_cli = use_cli
 
         self.running = False
@@ -126,7 +126,7 @@ class TestNode():
         #print("=====", self.args + extra_args)
         self.process = subprocess.Popen(self.args + extra_args, stderr=stderr, *args, **kwargs)
         self.running = True
-        self.log.debug("phored started, waiting for RPC to come up")
+        self.log.debug("retrexd started, waiting for RPC to come up")
 
     def wait_for_rpc_connection(self):
         """Sets up an RPC connection to the bitcoind process. Returns False if unable to connect."""
@@ -134,7 +134,7 @@ class TestNode():
         poll_per_s = 4
         for _ in range(poll_per_s * self.rpc_timeout):
             if self.process.poll() is not None:
-                raise FailedToStartError('phored exited with status {} during initialization'.format(self.process.returncode))
+                raise FailedToStartError('retrexd exited with status {} during initialization'.format(self.process.returncode))
             try:
                 self.rpc = get_rpc_proxy(rpc_url(self.datadir, self.index, self.rpchost), self.index, timeout=self.rpc_timeout, coveragedir=self.coverage_dir)
                 self.rpc.getblockcount()
@@ -154,7 +154,7 @@ class TestNode():
                 if "No RPC credentials" not in str(e):
                     raise
             time.sleep(1.0 / poll_per_s)
-        raise AssertionError("Unable to connect to phored")
+        raise AssertionError("Unable to connect to retrexd")
 
     def get_wallet_rpc(self, wallet_name):
         if self.use_cli:
@@ -214,7 +214,7 @@ class TestNode():
                 self.stop_node()
                 self.wait_until_stopped()
             except FailedToStartError as e:
-                self.log.debug('phored failed to start: %s', e)
+                self.log.debug('retrexd failed to start: %s', e)
                 self.running = False
                 self.process = None
                 # Check stderr for expected message
@@ -232,17 +232,17 @@ class TestNode():
                             raise AssertionError('Expected message "{}" does not fully match stderr:\n"{}"'.format(expected_msg, stderr))
             else:
                 if expected_msg is None:
-                    assert_msg = "phored should have exited with an error"
+                    assert_msg = "retrexd should have exited with an error"
                 else:
-                    assert_msg = "phored should have exited with expected error " + expected_msg
+                    assert_msg = "retrexd should have exited with expected error " + expected_msg
                 raise AssertionError(assert_msg)
 
-    def node_encrypt_wallet(self, passphrase):
+    def node_encrypt_wallet(self, passreexase):
         """"Encrypts the wallet.
 
-        This causes phored to shutdown, so this method takes
+        This causes retrexd to shutdown, so this method takes
         care of cleaning up resources."""
-        self.encryptwallet(passphrase)
+        self.encryptwallet(passreexase)
         self.wait_until_stopped()
 
     def add_p2p_connection(self, p2p_conn, *args, **kwargs):

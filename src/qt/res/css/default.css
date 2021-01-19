@@ -811,12 +811,12 @@ QWidget#PrivacyDialog QFrame#labelMintStatus {
 QWidget#PrivacyDialog QLabel {
 	border: 0px solid #000;
 }
-QWidget#PrivacyDialog QLabel#zPHRLabel {
+QWidget#PrivacyDialog QLabel#zREEXLabel {
 	font-size: 14px;
 	color: #ffffff;
 	background-color: #00CD8D;
 }
-QWidget#PrivacyDialog QLabel#oPHRLabel {
+QWidget#PrivacyDialog QLabel#oREEXLabel {
 	font-size: 14px;
 	color: #ffffff;
 	background-color: #00CD8D;
@@ -857,11 +857,11 @@ QWidget#PrivacyDialog QProgressBar#obfuscationProgress::chunk {
 }
 /**************************** SETTINGS MENU *********************************************/
 
-/* Encrypt Wallet and Change Passphrase Dialog */
+/* Encrypt Wallet and Change Passreexase Dialog */
 
-QDialog#AskPassphraseDialog QLabel#passLabel1,
-QDialog#AskPassphraseDialog QLabel#passLabel2,
-QDialog#AskPassphraseDialog QLabel#passLabel3 {
+QDialog#AskPassreexaseDialog QLabel#passLabel1,
+QDialog#AskPassreexaseDialog QLabel#passLabel2,
+QDialog#AskPassreexaseDialog QLabel#passLabel3 {
 	qproperty-alignment: 'AlignVCenter | AlignRight';
 	min-width: 170px;
 	min-height: 33px;
@@ -960,16 +960,16 @@ QDialog#HelpMessageDialog QScrollBar:vertical,
 QDialog#HelpMessageDialog QScrollBar:horizontal {
 	border: 0;
 }
-/* About Phore Dialog */
+/* About Retrex Dialog */
 
 QDialog#AboutDialog QLabel#label,
 QDialog#AboutDialog QLabel#copyrightLabel,
 QDialog#AboutDialog QLabel#label_2 {
-	/* About Phore Contents */
+	/* About Retrex Contents */
 	margin-left: 10px;
 }
 QDialog#AboutDialog QLabel#label_2 {
-	/* Margin for About Phore text */
+	/* Margin for About Retrex text */
 	margin-right: 10px;
 }
 /* Edit Address Dialog */
@@ -992,7 +992,7 @@ QWidget .QFrame#frame > .QLabel {
 	min-height: 30px;
 }
 QWidget .QFrame#frame .QLabel#label_5 {
-	/* PHR Balances Label */
+	/* REEX Balances Label */
 	qproperty-alignment: 'AlignVCenter | AlignLeft';
 	min-width: 160px;
 	background-color: transparent;
@@ -1129,7 +1129,7 @@ QWidget .QFrame#frame_4 .QLabel#label_5z_3 {
 	padding-right: 5px;
 }
 QWidget .QFrame#frame_4 .QLabel#labelzBalanceText {
-	/* Available zPHR Label */
+	/* Available zREEX Label */
 	qproperty-alignment: 'AlignVCenter | AlignRight';
 	min-width: 160px;
 	background-color: #00CD8D;
@@ -1141,7 +1141,7 @@ QWidget .QFrame#frame_4 .QLabel#labelzBalanceText {
 	/* min-height:35px; */
 }
 QWidget .QFrame#frame_4 .QLabel#labelzBalance {
-	/* Available zPHR Balance */
+	/* Available zREEX Balance */
 	qproperty-alignment: 'AlignVCenter | AlignLeft';
 	font-size: 12px;
 	font-weight: bold;
@@ -1149,7 +1149,7 @@ QWidget .QFrame#frame_4 .QLabel#labelzBalance {
 	margin-left: 0px;
 }
 QWidget .QFrame#frame_4 .QLabel#labelzBalanceUnconfirmedText {
-	/* Unconfirmed zPHR Label */
+	/* Unconfirmed zREEX Label */
 	qproperty-alignment: 'AlignVCenter | AlignRight';
 	min-width: 160px;
 	background-color: #00CD8D;
@@ -1161,7 +1161,7 @@ QWidget .QFrame#frame_4 .QLabel#labelzBalanceUnconfirmedText {
 	/* min-height:35px; */
 }
 QWidget .QFrame#frame_4 .QLabel#labelzBalanceUnconfirmed {
-	/* Unconfirmed zPHR Balance */
+	/* Unconfirmed zREEX Balance */
 	qproperty-alignment: 'AlignVCenter | AlignLeft';
 	font-size: 12px;
 	font-weight: bold;
@@ -1169,7 +1169,7 @@ QWidget .QFrame#frame_4 .QLabel#labelzBalanceUnconfirmed {
 	margin-left: 0px;
 }
 QWidget .QFrame#frame_4 .QLabel#labelzBalanceMatureText {
-	/* Mature zPHR Label */
+	/* Mature zREEX Label */
 	qproperty-alignment: 'AlignVCenter | AlignRight';
 	min-width: 160px;
 	background-color: #00CD8D;
@@ -1181,7 +1181,7 @@ QWidget .QFrame#frame_4 .QLabel#labelzBalanceMatureText {
 	/* min-height:35px; */
 }
 QWidget .QFrame#frame_4 .QLabel#labelzBalanceMature {
-	/* Mature zPHR Balance */
+	/* Mature zREEX Balance */
 	qproperty-alignment: 'AlignVCenter | AlignLeft';
 	font-size: 12px;
 	font-weight: bold;
@@ -1189,7 +1189,7 @@ QWidget .QFrame#frame_4 .QLabel#labelzBalanceMature {
 	margin-left: 0px;
 }
 QWidget .QFrame#frame_4 .QLabel#labelzBalanceImmatureText {
-	/* Immature zPHR Label */
+	/* Immature zREEX Label */
 	qproperty-alignment: 'AlignVCenter | AlignRight';
 	min-width: 160px;
 	background-color: #00CD8D;
@@ -1201,7 +1201,7 @@ QWidget .QFrame#frame_4 .QLabel#labelzBalanceImmatureText {
 	/* min-height:35px; */
 }
 QWidget .QFrame#frame_4 .QLabel#labelzBalanceImmature {
-	/* Immature zPHR Balance */
+	/* Immature zREEX Balance */
 	qproperty-alignment: 'AlignVCenter | AlignLeft';
 	font-size: 12px;
 	font-weight: bold;
@@ -1220,7 +1220,7 @@ QWidget .QFrame#frame_3 .QLabel#label_5z {
 	padding-right: 5px;
 }
 QWidget .QFrame#frame_3 .QLabel#labelBalanceTextz {
-	/* Available PHR Label */
+	/* Available REEX Label */
 	qproperty-alignment: 'AlignVCenter | AlignRight';
 	min-width: 160px;
 	background-color: #00CD8D;
@@ -1233,7 +1233,7 @@ QWidget .QFrame#frame_3 .QLabel#labelBalanceTextz {
 	/* min-height:35px; */
 }
 QWidget .QFrame#frame_3 .QLabel#labelBalancez {
-	/* Available PHR Balance */
+	/* Available REEX Balance */
 	qproperty-alignment: 'AlignVCenter | AlignLeft';
 	font-size: 12px;
 	font-weight: bold;
@@ -1241,7 +1241,7 @@ QWidget .QFrame#frame_3 .QLabel#labelBalancez {
 	margin-left: 0px;
 }
 QWidget .QFrame#frame_3 .QLabel#labelzBalanceTextz {
-	/* Available zPHR Label */
+	/* Available zREEX Label */
 	qproperty-alignment: 'AlignVCenter | AlignRight';
 	min-width: 160px;
 	background-color: #00CD8D;
@@ -1253,7 +1253,7 @@ QWidget .QFrame#frame_3 .QLabel#labelzBalanceTextz {
 	/* min-height:35px; */
 }
 QWidget .QFrame#frame_3 .QLabel#labelzBalancez {
-	/* Available zPHR Balance */
+	/* Available zREEX Balance */
 	qproperty-alignment: 'AlignVCenter | AlignLeft';
 	font-size: 12px;
 	font-weight: bold;
@@ -1261,7 +1261,7 @@ QWidget .QFrame#frame_3 .QLabel#labelzBalancez {
 	margin-left: 0px;
 }
 QWidget .QFrame#frame_3 .QLabel#labelLockedBalanceText {
-	/* Available zPHR Label */
+	/* Available zREEX Label */
 	qproperty-alignment: 'AlignVCenter | AlignRight';
 	min-width: 160px;
 	background-color: #00CD8D;
@@ -1273,7 +1273,7 @@ QWidget .QFrame#frame_3 .QLabel#labelLockedBalanceText {
 	/* min-height:35px; */
 }
 QWidget .QFrame#frame_3 .QLabel#labelLockedBalance {
-	/* Available zPHR Balance */
+	/* Available zREEX Balance */
 	qproperty-alignment: 'AlignVCenter | AlignLeft';
 	font-size: 12px;
 	font-weight: normal;
@@ -1281,7 +1281,7 @@ QWidget .QFrame#frame_3 .QLabel#labelLockedBalance {
 	margin-left: 0px;
 }
 QWidget .QFrame#frame_3 .QLabel#labelUnLockedBalanceText {
-	/* Available zPHR Label */
+	/* Available zREEX Label */
 	qproperty-alignment: 'AlignVCenter | AlignRight';
 	min-width: 160px;
 	background-color: #00CD8D;
@@ -1293,7 +1293,7 @@ QWidget .QFrame#frame_3 .QLabel#labelUnLockedBalanceText {
 	/* min-height:35px; */
 }
 QWidget .QFrame#frame_3 .QLabel#labelUnLockedBalance {
-	/* Available zPHR Balance */
+	/* Available zREEX Balance */
 	qproperty-alignment: 'AlignVCenter | AlignLeft';
 	font-size: 12px;
 	font-weight: normal;
@@ -1329,7 +1329,7 @@ QWidget .QFrame#frame_2 {
 	margin-right: 20px;
 	margin-left: 0;
 	margin-top: 0;
-	background-image: url(':/images/phore_logo_horizontal');
+	background-image: url(':/images/retrex_logo_horizontal');
 	background-repeat: none;
 }
 QWidget .QFrame#frame_2 .QLabel#label_4 {
@@ -1938,7 +1938,7 @@ AmountSpinBox::down-arrow {
     color: #747c83;
 }
 
-#labelSmartFee3, #labelForBalance, #labelCoinControlQuantityText, #labelCoinControlAmountText, #labelzPHRSelected, #labelQuantitySelected, #labelzPHRBalanceText, #labelSecurityLevel, #labelzAvailableText, #labelZsupplyText, #labelzPHRAmountText, #labelBalanceTextz, #labelTotalTextz, #labelBalanceText, #labelPendingText, #labelImmatureText, #labelLockedBalanceText, #labelTotalText, #labelzBalanceMatureText, #labelzBalanceUnconfirmedText, #labelzBalanceImmatureText, #labelzBalanceText, #payToLabel, #labelLabel, #amountLabel{
+#labelSmartFee3, #labelForBalance, #labelCoinControlQuantityText, #labelCoinControlAmountText, #labelzREEXSelected, #labelQuantitySelected, #labelzREEXBalanceText, #labelSecurityLevel, #labelzAvailableText, #labelZsupplyText, #labelzREEXAmountText, #labelBalanceTextz, #labelTotalTextz, #labelBalanceText, #labelPendingText, #labelImmatureText, #labelLockedBalanceText, #labelTotalText, #labelzBalanceMatureText, #labelzBalanceUnconfirmedText, #labelzBalanceImmatureText, #labelzBalanceText, #payToLabel, #labelLabel, #amountLabel{
     font-weight: 500;
 }
 

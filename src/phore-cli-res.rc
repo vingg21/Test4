@@ -16,14 +16,14 @@ BEGIN
     BEGIN
         BLOCK "040904E4" // U.S. English - multilingual (hex)
         BEGIN
-            VALUE "CompanyName",        "Phore"
-            VALUE "FileDescription",    "Phore-cli (OSS RPC client for Phore)"
+            VALUE "CompanyName",        "Retrex"
+            VALUE "FileDescription",    "Retrex-cli (OSS RPC client for Retrex)"
             VALUE "FileVersion",        VER_FILEVERSION_STR
-            VALUE "InternalName",       "phore-cli"
+            VALUE "InternalName",       "retrex-cli"
             VALUE "LegalCopyright",     COPYRIGHT_STR
             VALUE "LegalTrademarks1",   "Distributed under the MIT/X11 software license, see the accompanying file COPYING or http://www.opensource.org/licenses/mit-license.php."
-            VALUE "OriginalFilename",   "phore-cli.exe"
-            VALUE "ProductName",        "Phore-cli"
+            VALUE "OriginalFilename",   "retrex-cli.exe"
+            VALUE "ProductName",        "Retrex-cli"
             VALUE "ProductVersion",     VER_PRODUCTVERSION_STR
         END
     END

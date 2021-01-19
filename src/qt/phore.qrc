@@ -49,12 +49,12 @@
         <file alias="tx_input">res/icons/tx_input.png</file>
         <file alias="tx_output">res/icons/tx_output.png</file>
         <file alias="tx_inout">res/icons/tx_inout.png</file>
-        <file alias="unit_phore">res/icons/unit_phore.png</file>
-        <file alias="unit_mphore">res/icons/unit_mphore.png</file>
-        <file alias="unit_uphore">res/icons/unit_uphore.png</file>
-        <file alias="unit_tphore">res/icons/unit_tphore.png</file>
-        <file alias="unit_tmphore">res/icons/unit_tmphore.png</file>
-        <file alias="unit_tuphore">res/icons/unit_tuphore.png</file>
+        <file alias="unit_retrex">res/icons/unit_retrex.png</file>
+        <file alias="unit_mretrex">res/icons/unit_mretrex.png</file>
+        <file alias="unit_uretrex">res/icons/unit_uretrex.png</file>
+        <file alias="unit_tretrex">res/icons/unit_tretrex.png</file>
+        <file alias="unit_tmretrex">res/icons/unit_tmretrex.png</file>
+        <file alias="unit_turetrex">res/icons/unit_turetrex.png</file>
         <file alias="lock_closed">res/icons/lock_closed.png</file>
         <file alias="lock_open">res/icons/lock_open.png</file>
         <file alias="key">res/icons/key.png</file>
@@ -72,7 +72,7 @@
     </qresource>
     <qresource prefix="/images">
         <file alias="about">res/images/about.png</file>
-        <file alias="phore_logo_horizontal">res/images/phore_logo_horizontal.png</file>
+        <file alias="retrex_logo_horizontal">res/images/retrex_logo_horizontal.png</file>
         <file alias="downArrow">res/images/downArrow.png</file>
         <file alias="upArrow">res/images/upArrow.png</file>
         <file alias="downArrow_small">res/images/downArrow_small_dark.png</file>

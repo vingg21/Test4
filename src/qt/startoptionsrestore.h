@@ -1,5 +1,5 @@
 //
-// Created by Kolby on 6/19/2019.
+// Created by Kolby on 6/19/2021.
 //
 
 #include <QLineEdit>
@@ -11,7 +11,7 @@ namespace Ui {
     class StartOptionsRestore;
 }
 
-/** Dialog to ask for passphrases. Used for encryption only
+/** Dialog to ask for passreexases. Used for encryption only
  */
 class StartOptionsRestore : public QWidget {
     Q_OBJECT

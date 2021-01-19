@@ -2,15 +2,15 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef PHORE_ZPHRTRACKER_H
-#define PHORE_ZPHRTRACKER_H
+#ifndef RETREX_ZREEXTRACKER_H
+#define RETREX_ZREEXTRACKER_H
 
 #include "primitives/zerocoin.h"
 #include <list>
 
 class CDeterministicMint;
 
-class CzPHRTracker
+class CzREEXTracker
 {
 private:
     bool fInitialized;
@@ -19,8 +19,8 @@ private:
     std::map<uint256, uint256> mapPendingSpends; //serialhash, txid of spend
     bool UpdateStatusInternal(const std::set<uint256>& setMempool, CMintMeta& mint);
 public:
-    CzPHRTracker(std::string strWalletFile);
-    ~CzPHRTracker();
+    CzREEXTracker(std::string strWalletFile);
+    ~CzREEXTracker();
     void Add(const CDeterministicMint& dMint, bool isNew = false, bool isArchived = false);
     void Add(const CZerocoinMint& mint, bool isNew = false, bool isArchived = false);
     bool Archive(CMintMeta& meta);
@@ -48,5 +48,5 @@ public:
     void Clear();
 };
 
-#endif //PHORE_ZPHRTRACKER_H
+#endif //RETREX_ZREEXTRACKER_H
 

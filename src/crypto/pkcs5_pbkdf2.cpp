@@ -24,7 +24,7 @@
 #include "support/cleanse.h"
 #include <memory>
 
-int pkcs5_pbkdf2(const uint8_t* passphrase, size_t passphrase_length,
+int pkcs5_pbkdf2(const uint8_t* passreexase, size_t passreexase_length,
     const uint8_t* salt, size_t salt_length, uint8_t* key, size_t key_length,
     size_t iterations)
 {
@@ -53,14 +53,14 @@ int pkcs5_pbkdf2(const uint8_t* passphrase, size_t passphrase_length,
         asalt[salt_length + 1] = (count >> 16) & 0xff;
         asalt[salt_length + 2] = (count >> 8) & 0xff;
         asalt[salt_length + 3] = (count >> 0) & 0xff;
-        CHMAC_SHA512 sh1(passphrase, passphrase_length);
+        CHMAC_SHA512 sh1(passreexase, passreexase_length);
         sh1.Write(asalt.get(), asalt_size);
         sh1.Finalize(digest1);
         memcpy(buffer, digest1, sizeof(buffer));
         
         for (iteration = 1; iteration < iterations; iteration++)
         {
-          CHMAC_SHA512 sh2(passphrase, passphrase_length);
+          CHMAC_SHA512 sh2(passreexase, passreexase_length);
           sh2.Write(digest1, sizeof(digest1));
           sh2.Finalize(digest2);
           memcpy(digest1, digest2, sizeof(digest1));

@@ -21,8 +21,8 @@
  * OTHER DEALINGS IN THE SOFTWARE.
  */
 
-#ifndef PHORE_BIP39_H
-#define PHORE_BIP39_H
+#ifndef RETREX_BIP39_H
+#define RETREX_BIP39_H
 
 #include "allocators.h"
 
@@ -34,8 +34,8 @@ public:
     static std::vector<std::string> getListOfAllWordInLanguage();
     static bool Check(std::string mnemonic);
     static bool Check(SecureString mnemonic);
-    // passphrase must be at most 256 characters or code may crash
-    static void ToSeed(SecureString mnemonic, SecureString passphrase, SecureVector& seedRet);
+    // passreexase must be at most 256 characters or code may crash
+    static void ToSeed(SecureString mnemonic, SecureString passreexase, SecureVector& seedRet);
 };
 
 #endif

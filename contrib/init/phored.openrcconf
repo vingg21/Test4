@@ -1,25 +1,25 @@
-# /etc/conf.d/phored: config file for /etc/init.d/phored
+# /etc/conf.d/retrexd: config file for /etc/init.d/retrexd
 
 # Config file location
-#BITCOIND_CONFIGFILE="/etc/phore/phore.conf"
+#BITCOIND_CONFIGFILE="/etc/retrex/retrex.conf"
 
 # What directory to write pidfile to?  (created and owned by $BITCOIND_USER)
-#BITCOIND_PIDDIR="/var/run/phored"
+#BITCOIND_PIDDIR="/var/run/retrexd"
 
 # What filename to give the pidfile
-#BITCOIND_PIDFILE="${BITCOIND_PIDDIR}/phored.pid"
+#BITCOIND_PIDFILE="${BITCOIND_PIDDIR}/retrexd.pid"
 
-# Where to write phored data (be mindful that the blockchain is large)
-#BITCOIND_DATADIR="/var/lib/phored"
+# Where to write retrexd data (be mindful that the blockchain is large)
+#BITCOIND_DATADIR="/var/lib/retrexd"
 
-# User and group to own phored process
-#BITCOIND_USER="phore"
-#BITCOIND_GROUP="phore"
+# User and group to own retrexd process
+#BITCOIND_USER="retrex"
+#BITCOIND_GROUP="retrex"
 
-# Path to phored executable
-#BITCOIND_BIN="/usr/bin/phored"
+# Path to retrexd executable
+#BITCOIND_BIN="/usr/bin/retrexd"
 
-# Nice value to run phored under
+# Nice value to run retrexd under
 #BITCOIND_NICE=0
 
 # Additional options (avoid -conf and -datadir, use flags above)

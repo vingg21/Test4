@@ -12,7 +12,7 @@ namespace Ui {
 class StartOptionsDialog;
 }
 
-/** Dialog to ask for passphrases. Used for encryption only
+/** Dialog to ask for passreexases. Used for encryption only
  */
 class StartOptionsDialog : public QDialog {
     Q_OBJECT

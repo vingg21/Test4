@@ -1,19 +1,19 @@
 [Unit]
-Description=Phore's distributed currency daemon
+Description=Retrex's distributed currency daemon
 After=network.target
 
 [Service]
-User=phore
-Group=phore
+User=retrex
+Group=retrex
 
 Type=forking
-PIDFile=/var/lib/phored/phored.pid
+PIDFile=/var/lib/retrexd/retrexd.pid
 
-ExecStart=/usr/bin/phored -daemon -pid=/var/lib/phored/phored.pid \
-          -conf=/etc/phore/phore.conf -datadir=/var/lib/phored
+ExecStart=/usr/bin/retrexd -daemon -pid=/var/lib/retrexd/retrexd.pid \
+          -conf=/etc/retrex/retrex.conf -datadir=/var/lib/retrexd
 
-ExecStop=-/usr/bin/phore-cli -conf=/etc/phore/phore.conf \
-         -datadir=/var/lib/phored stop
+ExecStop=-/usr/bin/retrex-cli -conf=/etc/retrex/retrex.conf \
+         -datadir=/var/lib/retrexd stop
 
 Restart=always
 PrivateTmp=true

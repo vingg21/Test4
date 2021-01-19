@@ -84,19 +84,19 @@ class Node :
 		self._nodePath = os.path.join(self._app.getRootPath(), 'node%d' % (nodeIndex))
 		self._rpcUser = 'rpcuser%d' % (nodeIndex)
 		self._rpcPassword = 'rpcpassword%d' % (nodeIndex)
-		self._phored = self._app.getPhored()
-		self._phoreCli = self._app.getPhoreCli()
+		self._retrexd = self._app.getRetrexd()
+		self._retrexCli = self._app.getRetrexCli()
 		self._daemonProcess = None
 
 	def createDataDir(self, nodeCount, masterNodePrivateKey = None) :
 		makeDirs(self._nodePath)
 		writeFile(
-			os.path.join(self._nodePath, 'phore.conf'),
-			self._generatePhoreConf(nodeCount, masterNodePrivateKey)
+			os.path.join(self._nodePath, 'retrex.conf'),
+			self._generateRetrexConf(nodeCount, masterNodePrivateKey)
 		)
 		
 	def startNode(self) :
-		self._daemonProcess = subprocess.Popen([ self._phored, '-datadir=' + self._nodePath, '-daemon' ])
+		self._daemonProcess = subprocess.Popen([ self._retrexd, '-datadir=' + self._nodePath, '-daemon' ])
 		
 	def stopNode(self) :
 		self.executeCli('stop')
@@ -109,7 +109,7 @@ class Node :
 		normalizedArgs = []
 		for arg in args :
 			normalizedArgs.append(str(arg))
-		output = executeCommand(self._phoreCli, '-datadir=' + self._nodePath, *normalizedArgs)
+		output = executeCommand(self._retrexCli, '-datadir=' + self._nodePath, *normalizedArgs)
 		command = ' '.join(normalizedArgs)
 		if output.find('error') >= 0 :
 			return {
@@ -138,13 +138,13 @@ class Node :
 		print('waitNodeStarting failed')
 		return False
 
-	def _generatePhoreConf(self, nodeCount, masterNodePrivateKey) :
+	def _generateRetrexConf(self, nodeCount, masterNodePrivateKey) :
 		result = ""
 		result += "regtest=1\n"
 		result += "server=1\n"
 		result += "debug=1\n"
 		result += "debug=net\n"
-		result += "debug=phore\n"
+		result += "debug=retrex\n"
 		result += "rpcuser=%s\n" % (self._rpcUser)
 		result += "rpcpassword=%s\n" % (self._rpcPassword)
 		result += "port=%d\n" % (getNodePort(self._nodeIndex))
@@ -200,13 +200,13 @@ class Application :
 		makeDirs(self._rootPath)
 		print('Root path: %s' % (self._rootPath))
 		
-		self._phored = os.getenv('PHORED', None)
-		if not self._phored :
-			die('Undefined PHORED')
-		self._phoreCli = os.getenv('PHORECLI', None)
-		if not self._phoreCli :
-			die('Undefined PHORECLI')
-		print('phored: %s' % (self._phored))
+		self._retrexd = os.getenv('RETREXD', None)
+		if not self._retrexd :
+			die('Undefined RETREXD')
+		self._retrexCli = os.getenv('RETREXCLI', None)
+		if not self._retrexCli :
+			die('Undefined RETREXCLI')
+		print('retrexd: %s' % (self._retrexd))
 	
 	def _cleanup(self) :
 		self._stopAllNodes()
@@ -412,11 +412,11 @@ class Application :
 	def getRootPath(self) :
 		return self._rootPath
 		
-	def getPhored(self) :
-		return self._phored
+	def getRetrexd(self) :
+		return self._retrexd
 
-	def getPhoreCli(self) :
-		return self._phoreCli
+	def getRetrexCli(self) :
+		return self._retrexCli
 
 if __name__ == '__main__':
     Application().run()

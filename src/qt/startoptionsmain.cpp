@@ -1,5 +1,5 @@
 //
-// Created by Kolby on 6/19/2019.
+// Created by Kolby on 6/19/2021.
 //
 #include "startoptionsmain.h"
 #include "ui_startoptionsmain.h"
@@ -26,7 +26,7 @@ StartOptionsMain::StartOptionsMain(QWidget *parent)
     ui->setupUi(this);
     this->setStyleSheet(GUIUtil::loadStyleSheet());
 
-    this->setWindowTitle("Phore Wallet Setup");
+    this->setWindowTitle("Retrex Wallet Setup");
 
 
     wordsList = CMnemonic::getListOfAllWordInLanguage();
@@ -183,15 +183,15 @@ void StartOptionsMain::on_Next_clicked()
         case 4:{
             std::vector<std::string> word_str = startOptionsRestore->getOrderedStrings();
 
-            std::string seedphrase = "";
+            std::string seedreexase = "";
             for (std::string &q_word : word_str) {
-                if (seedphrase.empty())
-                    seedphrase = q_word;
+                if (seedreexase.empty())
+                    seedreexase = q_word;
                 else
-                    seedphrase += " " + q_word;
+                    seedreexase += " " + q_word;
             }
             // reverses the lists order
-            if(CMnemonic::Check(seedphrase)){
+            if(CMnemonic::Check(seedreexase)){
                 wordsDone = word_str;
                 QApplication::quit();
             } else {

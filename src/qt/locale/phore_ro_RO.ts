@@ -58,7 +58,7 @@
     <name>AddressTableModel</name>
     </context>
 <context>
-    <name>AskPassphraseDialog</name>
+    <name>AskPassreexaseDialog</name>
     </context>
 <context>
     <name>Bip38ToolDialog</name>
@@ -183,9 +183,9 @@
     </message>
     </context>
 <context>
-    <name>ZPhrControlDialog</name>
+    <name>ZReexControlDialog</name>
     </context>
 <context>
-    <name>phore-core</name>
+    <name>retrex-core</name>
     </context>
 </TS>

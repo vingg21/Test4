@@ -1,5 +1,5 @@
 /**
- * Copyright (c) 2011-2019 libbitcoin developers (see AUTHORS)
+ * Copyright (c) 2011-2021 libbitcoin developers (see AUTHORS)
  *
  * This file is part of libbitcoin.
  *
@@ -17,8 +17,8 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-#ifndef PHORE_ARRAYSLICE_H
-#define PHORE_ARRAYSLICE_H
+#ifndef RETREX_ARRAYSLICE_H
+#define RETREX_ARRAYSLICE_H
 
 #include <array>
 
@@ -42,4 +42,4 @@ private:
     const Iterable* end_;
 };
 
-#endif //PHORE_ARRAYSLICE_H
+#endif //RETREX_ARRAYSLICE_H

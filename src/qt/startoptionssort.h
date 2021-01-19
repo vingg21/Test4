@@ -1,5 +1,5 @@
 //
-// Created by Kolby on 6/19/2019.
+// Created by Kolby on 6/19/2021.
 //
 
 #include <QListView>
@@ -22,7 +22,7 @@ namespace Ui {
     class StartOptionsSort;
 }
 
-/** Dialog to ask for passphrases. Used for encryption only
+/** Dialog to ask for passreexases. Used for encryption only
  */
 class StartOptionsSort : public QWidget {
     Q_OBJECT

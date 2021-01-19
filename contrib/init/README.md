@@ -1,10 +1,10 @@
 Sample configuration files for:
 
-SystemD: phored.service
-Upstart: phored.conf
-OpenRC:  phored.openrc
-         phored.openrcconf
-CentOS:  phored.init
+SystemD: retrexd.service
+Upstart: retrexd.conf
+OpenRC:  retrexd.openrc
+         retrexd.openrcconf
+CentOS:  retrexd.init
 
 have been made available to assist packagers in creating node packages here.
 

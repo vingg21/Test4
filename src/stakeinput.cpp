@@ -1,4 +1,4 @@
-// Copyright (c) 2017-2019 The PIVX developers
+// Copyright (c) 2017-2021 The PIVX developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -7,31 +7,31 @@
 #include "stakeinput.h"
 #include "wallet/wallet.h"
 
-bool CPhoreStake::SetInput(CTransaction txPrev, unsigned int n)
+bool CRetrexStake::SetInput(CTransaction txPrev, unsigned int n)
 {
     this->txFrom = txPrev;
     this->nPosition = n;
     return true;
 }
 
-bool CPhoreStake::GetTxFrom(CTransaction& tx)
+bool CRetrexStake::GetTxFrom(CTransaction& tx)
 {
     tx = txFrom;
     return true;
 }
 
-bool CPhoreStake::CreateTxIn(CWallet* pwallet, CTxIn& txIn, uint256 hashTxOut)
+bool CRetrexStake::CreateTxIn(CWallet* pwallet, CTxIn& txIn, uint256 hashTxOut)
 {
     txIn = CTxIn(txFrom.GetHash(), nPosition);
     return true;
 }
 
-CAmount CPhoreStake::GetValue()
+CAmount CRetrexStake::GetValue()
 {
     return txFrom.vout[nPosition].nValue;
 }
 
-bool CPhoreStake::CreateTxOuts(CWallet* pwallet, std::vector<CTxOut>& vout, CAmount nTotal)
+bool CRetrexStake::CreateTxOuts(CWallet* pwallet, std::vector<CTxOut>& vout, CAmount nTotal)
 {
     std::vector<valtype> vSolutions;
     txnouttype whichType;
@@ -66,7 +66,7 @@ bool CPhoreStake::CreateTxOuts(CWallet* pwallet, std::vector<CTxOut>& vout, CAmo
     return true;
 }
 
-bool CPhoreStake::GetModifier(uint64_t& nStakeModifier)
+bool CRetrexStake::GetModifier(uint64_t& nStakeModifier)
 {
     if (this->nStakeModifier == 0) {
         // look for the modifier
@@ -82,16 +82,16 @@ bool CPhoreStake::GetModifier(uint64_t& nStakeModifier)
     return true;
 }
 
-CDataStream CPhoreStake::GetUniqueness()
+CDataStream CRetrexStake::GetUniqueness()
 {
-    //The unique identifier for a PHR stake is the outpoint
+    //The unique identifier for a REEX stake is the outpoint
     CDataStream ss(SER_NETWORK, 0);
     ss << nPosition << txFrom.GetHash();
     return ss;
 }
 
 //The block that the UTXO was added to the chain
-CBlockIndex* CPhoreStake::GetIndexFrom()
+CBlockIndex* CRetrexStake::GetIndexFrom()
 {
     if (pindexFrom)
         return pindexFrom;

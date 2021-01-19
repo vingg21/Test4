@@ -1,5 +1,5 @@
 Making all in src
-  CXX      phored-phored.o
+  CXX      retrexd-retrexd.o
   CXX      libbitcoin_server_a-addrman.o
   CXX      libbitcoin_server_a-alert.o
   CXX      libbitcoin_server_a-bloom.o
@@ -112,7 +112,7 @@ criticalblock1
 /usr/local/opt/boost@1.57/include/boost/thread/lock_types.hpp:346:10: note: mutex acquired here
       m->lock();
          ^
-In file included from phored.cpp:11:
+In file included from retrexd.cpp:11:
 In file included from ./main.h:17:
 In file included from ./chain.h:10:
 In file included from ./chainparams.h:13:
@@ -2333,7 +2333,7 @@ criticalblock1
       m->lock();
          ^
 1 warning generated.
-  CXX      libbitcoin_wallet_a-zphrwallet.o
+  CXX      libbitcoin_wallet_a-zreexwallet.o
 In file included from stakeinput.cpp:5:
 In file included from ./chain.h:10:
 In file included from ./chainparams.h:13:
@@ -2372,9 +2372,9 @@ criticalblock1
       m->lock();
          ^
 1 warning generated.
-  CXX      libbitcoin_wallet_a-zphrtracker.o
-In file included from zphrwallet.cpp:5:
-In file included from ./zphrwallet.h:9:
+  CXX      libbitcoin_wallet_a-zreextracker.o
+In file included from zreexwallet.cpp:5:
+In file included from ./zreexwallet.h:9:
 In file included from ./libzerocoin/Coin.h:21:
 In file included from ./key.h:11:
 In file included from ./allocators.h:16:
@@ -2411,8 +2411,8 @@ criticalblock1
   CXX      wallet/libbitcoin_wallet_a-crypter.o
 1 warning generated.
   CXX      wallet/libbitcoin_wallet_a-db.o
-In file included from zphrtracker.cpp:6:
-In file included from ./zphrtracker.h:8:
+In file included from zreextracker.cpp:6:
+In file included from ./zreextracker.h:8:
 In file included from ./primitives/zerocoin.h:12:
 In file included from ./key.h:11:
 In file included from ./allocators.h:16:
@@ -2786,16 +2786,16 @@ void    OSMemoryBarrier( void );
 rm -f libmemenv.a
 /usr/bin/ar -rs libmemenv.a helpers/memenv/memenv.o
 ar: creating archive libmemenv.a
-  CXX      phore_cli-phore-cli.o
+  CXX      retrex_cli-retrex-cli.o
   CCLD     libsecp256k1.la
   CXX      libbitcoin_cli_a-rpcclient.o
-  CXX      phore_tx-phore-tx.o
+  CXX      retrex_tx-retrex-tx.o
 2 warnings generated.
   GEN      qt/paymentrequest.pb.h
 [libprotobuf WARNING google/protobuf/compiler/parser.cc:546] No syntax specified for the proto file: paymentrequest.proto. Please use 'syntax = "proto2";' or 'syntax = "proto3";' to specify a syntax version. (Defaulted to proto2 syntax.)
   GEN      qt/forms/ui_addressbookpage.h
   GEN      qt/forms/ui_configuremasternodepage.h
-  GEN      qt/forms/ui_askpassphrasedialog.h
+  GEN      qt/forms/ui_askpassreexasedialog.h
   GEN      qt/forms/ui_startoptionsdialog.h
   GEN      qt/forms/ui_startoptions.h
   GEN      qt/forms/ui_startoptionsrestore.h
@@ -2826,10 +2826,10 @@ qt/forms/startoptionsmain.ui: Warning: The name 'horizontalLayout' (QHBoxLayout)
   GEN      qt/forms/ui_signverifymessagedialog.h
   GEN      qt/forms/ui_transactiondescdialog.h
   GEN      qt/moc_addressbookpage.cpp
-  GEN      qt/forms/ui_zphrcontroldialog.h
+  GEN      qt/forms/ui_zreexcontroldialog.h
   GEN      qt/moc_configuremasternodepage.cpp
   GEN      qt/moc_addresstablemodel.cpp
-  GEN      qt/moc_askpassphrasedialog.cpp
+  GEN      qt/moc_askpassreexasedialog.cpp
   GEN      qt/moc_startoptionsdialog.cpp
   GEN      qt/moc_startoptions.cpp
   GEN      qt/moc_startoptionsrestore.cpp
@@ -2839,7 +2839,7 @@ qt/forms/startoptionsmain.ui: Warning: The name 'horizontalLayout' (QHBoxLayout)
 1 warning generated.
   GEN      qt/moc_bantablemodel.cpp
   GEN      qt/moc_bip38tooldialog.cpp
-In file included from phore-tx.cpp:6:
+In file included from retrex-tx.cpp:6:
 In file included from ./base58.h:17:
 In file included from ./chainparams.h:13:
 In file included from ./primitives/block.h:11:
@@ -2927,38 +2927,38 @@ criticalblock1
   GEN      qt/moc_walletframe.cpp
   GEN      qt/moc_walletmodel.cpp
   GEN      qt/moc_walletview.cpp
-  GEN      qt/moc_zphrcontroldialog.cpp
-  GEN      qt/qrc_phore.cpp
-  GEN      qt/locale/phore_bg.qm
-  GEN      qt/locale/phore_ca.qm
-  GEN      qt/locale/phore_cs.qm
-  GEN      qt/locale/phore_da.qm
-  GEN      qt/locale/phore_de.qm
-  GEN      qt/locale/phore_en.qm
-  GEN      qt/locale/phore_en_US.qm
-Warning: dropping duplicate messages in 'qt/locale/phore_en.qm'
+  GEN      qt/moc_zreexcontroldialog.cpp
+  GEN      qt/qrc_retrex.cpp
+  GEN      qt/locale/retrex_bg.qm
+  GEN      qt/locale/retrex_ca.qm
+  GEN      qt/locale/retrex_cs.qm
+  GEN      qt/locale/retrex_da.qm
+  GEN      qt/locale/retrex_de.qm
+  GEN      qt/locale/retrex_en.qm
+  GEN      qt/locale/retrex_en_US.qm
+Warning: dropping duplicate messages in 'qt/locale/retrex_en.qm'
 (try -verbose for more info).
-  GEN      qt/locale/phore_es.qm
-  GEN      qt/locale/phore_fi.qm
-  GEN      qt/locale/phore_fr_FR.qm
-  GEN      qt/locale/phore_hr.qm
-  GEN      qt/locale/phore_it.qm
-  GEN      qt/locale/phore_ja.qm
-  GEN      qt/locale/phore_ko_KR.qm
-  GEN      qt/locale/phore_nl.qm
-  GEN      qt/locale/phore_pl.qm
-Warning: dropping duplicate messages in 'qt/locale/phore_nl.qm'
+  GEN      qt/locale/retrex_es.qm
+  GEN      qt/locale/retrex_fi.qm
+  GEN      qt/locale/retrex_fr_FR.qm
+  GEN      qt/locale/retrex_hr.qm
+  GEN      qt/locale/retrex_it.qm
+  GEN      qt/locale/retrex_ja.qm
+  GEN      qt/locale/retrex_ko_KR.qm
+  GEN      qt/locale/retrex_nl.qm
+  GEN      qt/locale/retrex_pl.qm
+Warning: dropping duplicate messages in 'qt/locale/retrex_nl.qm'
 (try -verbose for more info).
-  GEN      qt/locale/phore_pt.qm
-  GEN      qt/locale/phore_pt_BR.qm
-  GEN      qt/locale/phore_ro_RO.qm
-  GEN      qt/locale/phore_ru.qm
-  GEN      qt/locale/phore_sk.qm
-  GEN      qt/locale/phore_sv.qm
-  GEN      qt/locale/phore_tr.qm
-  GEN      qt/locale/phore_uk.qm
-  GEN      qt/locale/phore_zh_CN.qm
-  GEN      qt/locale/phore_zh_TW.qm
+  GEN      qt/locale/retrex_pt.qm
+  GEN      qt/locale/retrex_pt_BR.qm
+  GEN      qt/locale/retrex_ro_RO.qm
+  GEN      qt/locale/retrex_ru.qm
+  GEN      qt/locale/retrex_sk.qm
+  GEN      qt/locale/retrex_sv.qm
+  GEN      qt/locale/retrex_tr.qm
+  GEN      qt/locale/retrex_uk.qm
+  GEN      qt/locale/retrex_zh_CN.qm
+  GEN      qt/locale/retrex_zh_TW.qm
   AR       libbitcoin_server.a
   AR       libbitcoin_common.a
   AR       libzerocoin/libbitcoin_zerocoin.a
@@ -2982,7 +2982,7 @@ In file included from ./port/port_posix.h:47:
 void    OSMemoryBarrier( void );
         ^
 1 warning generated.
-  GEN      qt/phore.moc
+  GEN      qt/retrex.moc
 g++ -std=c++11 -I. -I./include -std=c++0x  -DOS_MACOSX -DLEVELDB_PLATFORM_POSIX -DLEVELDB_ATOMIC_PRESENT -Wstack-protector -fstack-protector-all  -fPIC -g -O2 -Wall -Wextra -Wformat -Wvla -Wformat-security -Wthread-safety-analysis -Wno-unused-parameter -Wno-self-assign -Wno-unused-local-typedef -Wno-deprecated-register -Wno-implicit-fallthrough -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2 -I/usr/local/opt/boost@1.57/include -I/usr/local/opt/qt/include -I/usr/local/opt/openssl/include -DHAVE_BUILD_INFO -D__STDC_FORMAT_MACROS -isystem /opt/local/include -I/opt/local/include/db48 -I/usr/local/opt/berkeley-db@4/include -DMAC_OSX -DHAVE_QT5 -D__STDC_LIMIT_MACROS -c db/db_impl.cc -o db/db_impl.o
 g++ -std=c++11 -I. -I./include -std=c++0x  -DOS_MACOSX -DLEVELDB_PLATFORM_POSIX -DLEVELDB_ATOMIC_PRESENT -Wstack-protector -fstack-protector-all  -fPIC -g -O2 -Wall -Wextra -Wformat -Wvla -Wformat-security -Wthread-safety-analysis -Wno-unused-parameter -Wno-self-assign -Wno-unused-local-typedef -Wno-deprecated-register -Wno-implicit-fallthrough -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2 -I/usr/local/opt/boost@1.57/include -I/usr/local/opt/qt/include -I/usr/local/opt/openssl/include -DHAVE_BUILD_INFO -D__STDC_FORMAT_MACROS -isystem /opt/local/include -I/opt/local/include/db48 -I/usr/local/opt/berkeley-db@4/include -DMAC_OSX -DHAVE_QT5 -D__STDC_LIMIT_MACROS -c db/db_iter.cc -o db/db_iter.o
 g++ -std=c++11 -I. -I./include -std=c++0x  -DOS_MACOSX -DLEVELDB_PLATFORM_POSIX -DLEVELDB_ATOMIC_PRESENT -Wstack-protector -fstack-protector-all  -fPIC -g -O2 -Wall -Wextra -Wformat -Wvla -Wformat-security -Wthread-safety-analysis -Wno-unused-parameter -Wno-self-assign -Wno-unused-local-typedef -Wno-deprecated-register -Wno-implicit-fallthrough -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2 -I/usr/local/opt/boost@1.57/include -I/usr/local/opt/qt/include -I/usr/local/opt/openssl/include -DHAVE_BUILD_INFO -D__STDC_FORMAT_MACROS -isystem /opt/local/include -I/opt/local/include/db48 -I/usr/local/opt/berkeley-db@4/include -DMAC_OSX -DHAVE_QT5 -D__STDC_LIMIT_MACROS -c db/dbformat.cc -o db/dbformat.o
@@ -3065,7 +3065,7 @@ void    OSMemoryBarrier( void );
 1 warning generated.
 g++ -std=c++11 -I. -I./include -std=c++0x  -DOS_MACOSX -DLEVELDB_PLATFORM_POSIX -DLEVELDB_ATOMIC_PRESENT -Wstack-protector -fstack-protector-all  -fPIC -g -O2 -Wall -Wextra -Wformat -Wvla -Wformat-security -Wthread-safety-analysis -Wno-unused-parameter -Wno-self-assign -Wno-unused-local-typedef -Wno-deprecated-register -Wno-implicit-fallthrough -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2 -I/usr/local/opt/boost@1.57/include -I/usr/local/opt/qt/include -I/usr/local/opt/openssl/include -DHAVE_BUILD_INFO -D__STDC_FORMAT_MACROS -isystem /opt/local/include -I/opt/local/include/db48 -I/usr/local/opt/berkeley-db@4/include -DMAC_OSX -DHAVE_QT5 -D__STDC_LIMIT_MACROS -c db/log_writer.cc -o db/log_writer.o
 1 warning generated.
-  GEN      qt/qrc_phore_locale.cpp
+  GEN      qt/qrc_retrex_locale.cpp
 In file included from db/log_writer.cc:9:
 In file included from ./util/coding.h:17:
 In file included from ./port/port.h:14:
@@ -3109,7 +3109,7 @@ void    OSMemoryBarrier( void );
 /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libbitcoin_util.a(libbitcoin_util_a-strnlen.o) has no symbols
 g++ -std=c++11 -I. -I./include -std=c++0x  -DOS_MACOSX -DLEVELDB_PLATFORM_POSIX -DLEVELDB_ATOMIC_PRESENT -Wstack-protector -fstack-protector-all  -fPIC -g -O2 -Wall -Wextra -Wformat -Wvla -Wformat-security -Wthread-safety-analysis -Wno-unused-parameter -Wno-self-assign -Wno-unused-local-typedef -Wno-deprecated-register -Wno-implicit-fallthrough -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2 -I/usr/local/opt/boost@1.57/include -I/usr/local/opt/qt/include -I/usr/local/opt/openssl/include -DHAVE_BUILD_INFO -D__STDC_FORMAT_MACROS -isystem /opt/local/include -I/opt/local/include/db48 -I/usr/local/opt/berkeley-db@4/include -DMAC_OSX -DHAVE_QT5 -D__STDC_LIMIT_MACROS -c db/table_cache.cc -o db/table_cache.o
 1 warning generated.
-  CXX      qt/phore_qt-phore.o
+  CXX      qt/retrex_qt-retrex.o
 In file included from db/table_cache.cc:5:
 In file included from ./db/table_cache.h:12:
 In file included from ./db/dbformat.h:14:
@@ -3123,7 +3123,7 @@ In file included from ./port/port_posix.h:47:
 void    OSMemoryBarrier( void );
         ^
 1 warning generated.
-  OBJCXX   qt/phore_qt-macdockiconhandler.o
+  OBJCXX   qt/retrex_qt-macdockiconhandler.o
 1 warning generated.
 g++ -std=c++11 -I. -I./include -std=c++0x  -DOS_MACOSX -DLEVELDB_PLATFORM_POSIX -DLEVELDB_ATOMIC_PRESENT -Wstack-protector -fstack-protector-all  -fPIC -g -O2 -Wall -Wextra -Wformat -Wvla -Wformat-security -Wthread-safety-analysis -Wno-unused-parameter -Wno-self-assign -Wno-unused-local-typedef -Wno-deprecated-register -Wno-implicit-fallthrough -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2 -I/usr/local/opt/boost@1.57/include -I/usr/local/opt/qt/include -I/usr/local/opt/openssl/include -DHAVE_BUILD_INFO -D__STDC_FORMAT_MACROS -isystem /opt/local/include -I/opt/local/include/db48 -I/usr/local/opt/berkeley-db@4/include -DMAC_OSX -DHAVE_QT5 -D__STDC_LIMIT_MACROS -c db/version_edit.cc -o db/version_edit.o
 In file included from db/version_edit.cc:5:
@@ -3179,7 +3179,7 @@ void    OSMemoryBarrier( void );
         ^
 1 warning generated.
 g++ -std=c++11 -I. -I./include -std=c++0x  -DOS_MACOSX -DLEVELDB_PLATFORM_POSIX -DLEVELDB_ATOMIC_PRESENT -Wstack-protector -fstack-protector-all  -fPIC -g -O2 -Wall -Wextra -Wformat -Wvla -Wformat-security -Wthread-safety-analysis -Wno-unused-parameter -Wno-self-assign -Wno-unused-local-typedef -Wno-deprecated-register -Wno-implicit-fallthrough -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2 -I/usr/local/opt/boost@1.57/include -I/usr/local/opt/qt/include -I/usr/local/opt/openssl/include -DHAVE_BUILD_INFO -D__STDC_FORMAT_MACROS -isystem /opt/local/include -I/opt/local/include/db48 -I/usr/local/opt/berkeley-db@4/include -DMAC_OSX -DHAVE_QT5 -D__STDC_LIMIT_MACROS -c table/block_builder.cc -o table/block_builder.o
-  OBJCXX   qt/phore_qt-macnotificationhandler.o
+  OBJCXX   qt/retrex_qt-macnotificationhandler.o
 In file included from table/block_builder.cc:35:
 In file included from ./util/coding.h:17:
 In file included from ./port/port.h:14:
@@ -3245,7 +3245,7 @@ void    OSMemoryBarrier( void );
 1 warning generated.
 g++ -std=c++11 -I. -I./include -std=c++0x  -DOS_MACOSX -DLEVELDB_PLATFORM_POSIX -DLEVELDB_ATOMIC_PRESENT -Wstack-protector -fstack-protector-all  -fPIC -g -O2 -Wall -Wextra -Wformat -Wvla -Wformat-security -Wthread-safety-analysis -Wno-unused-parameter -Wno-self-assign -Wno-unused-local-typedef -Wno-deprecated-register -Wno-implicit-fallthrough -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2 -I/usr/local/opt/boost@1.57/include -I/usr/local/opt/qt/include -I/usr/local/opt/openssl/include -DHAVE_BUILD_INFO -D__STDC_FORMAT_MACROS -isystem /opt/local/include -I/opt/local/include/db48 -I/usr/local/opt/berkeley-db@4/include -DMAC_OSX -DHAVE_QT5 -D__STDC_LIMIT_MACROS -c table/two_level_iterator.cc -o table/two_level_iterator.o
 g++ -std=c++11 -I. -I./include -std=c++0x  -DOS_MACOSX -DLEVELDB_PLATFORM_POSIX -DLEVELDB_ATOMIC_PRESENT -Wstack-protector -fstack-protector-all  -fPIC -g -O2 -Wall -Wextra -Wformat -Wvla -Wformat-security -Wthread-safety-analysis -Wno-unused-parameter -Wno-self-assign -Wno-unused-local-typedef -Wno-deprecated-register -Wno-implicit-fallthrough -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2 -I/usr/local/opt/boost@1.57/include -I/usr/local/opt/qt/include -I/usr/local/opt/openssl/include -DHAVE_BUILD_INFO -D__STDC_FORMAT_MACROS -isystem /opt/local/include -I/opt/local/include/db48 -I/usr/local/opt/berkeley-db@4/include -DMAC_OSX -DHAVE_QT5 -D__STDC_LIMIT_MACROS -c util/arena.cc -o util/arena.o
-In file included from qt/phore.cpp:17:
+In file included from qt/retrex.cpp:17:
 In file included from ./net.h:19:
 In file included from ./sync.h:12:
 In file included from /usr/local/opt/boost@1.57/include/boost/thread/condition_variable.hpp:16:
@@ -3414,7 +3414,7 @@ g++ -std=c++11 -I. -I./include -std=c++0x  -DOS_MACOSX -DLEVELDB_PLATFORM_POSIX 
 1 warning generated.
 g++ -std=c++11 -I. -I./include -std=c++0x  -DOS_MACOSX -DLEVELDB_PLATFORM_POSIX -DLEVELDB_ATOMIC_PRESENT -Wstack-protector -fstack-protector-all  -fPIC -g -O2 -Wall -Wextra -Wformat -Wvla -Wformat-security -Wthread-safety-analysis -Wno-unused-parameter -Wno-self-assign -Wno-unused-local-typedef -Wno-deprecated-register -Wno-implicit-fallthrough -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2 -I/usr/local/opt/boost@1.57/include -I/usr/local/opt/qt/include -I/usr/local/opt/openssl/include -DHAVE_BUILD_INFO -D__STDC_FORMAT_MACROS -isystem /opt/local/include -I/opt/local/include/db48 -I/usr/local/opt/berkeley-db@4/include -DMAC_OSX -DHAVE_QT5 -D__STDC_LIMIT_MACROS -c util/env_posix.cc -o util/env_posix.o
 qt/bitcoinamountfield.cpp:100:24: warning: 'width' is deprecated: Use QFontMetrics::horizontalAdvance [-Wdeprecated-declarations]
-            int w = fm.width(BitcoinUnits::format(BitcoinUnits::PHR, BitcoinUnits::maxMoney(), false, BitcoinUnits::separatorAlways));
+            int w = fm.width(BitcoinUnits::format(BitcoinUnits::REEX, BitcoinUnits::maxMoney(), false, BitcoinUnits::separatorAlways));
                        ^
 /usr/local/Cellar/qt/5.13.0/lib/QtGui.framework/Headers/qfontmetrics.h:107:5: note: 'width' has been explicitly marked deprecated here
     QT_DEPRECATED_X("Use QFontMetrics::horizontalAdvance")
@@ -4071,7 +4071,7 @@ criticalblock1
 2 warnings generated.
   CXX      qt/libbitcoinqt_a-configuremasternodepage.o
   CXX      qt/libbitcoinqt_a-addresstablemodel.o
-  CXX      qt/libbitcoinqt_a-askpassphrasedialog.o
+  CXX      qt/libbitcoinqt_a-askpassreexasedialog.o
   CXX      qt/libbitcoinqt_a-bip38tooldialog.o
 3 warnings generated.
   CXX      qt/libbitcoinqt_a-coincontroldialog.o
@@ -4179,7 +4179,7 @@ QT_DEPRECATED_X("Use std::upper_bound") Q_OUTOFLINE_TEMPLATE RandomAccessIterato
 /usr/local/Cellar/qt/5.13.0/lib/QtCore.framework/Headers/qcompilerdetection.h:649:55: note: expanded from macro 'Q_DECL_DEPRECATED_X'
 #    define Q_DECL_DEPRECATED_X(text) __attribute__ ((__deprecated__(text)))
                                                       ^
-In file included from qt/askpassphrasedialog.cpp:12:
+In file included from qt/askpassreexasedialog.cpp:12:
 In file included from ./qt/walletmodel.h:8:
 In file included from ./qt/paymentrequestplus.h:13:
 In file included from ./base58.h:17:
@@ -5334,7 +5334,7 @@ criticalblock1
       m->lock();
          ^
 3 warnings generated.
-  CXX      qt/libbitcoinqt_a-zphrcontroldialog.o
+  CXX      qt/libbitcoinqt_a-zreexcontroldialog.o
 1 warning generated.
   CXX      qt/libbitcoinqt_a-moc_addressbookpage.o
 In file included from qt/walletmodeltransaction.cpp:5:
@@ -5459,10 +5459,10 @@ criticalblock1
 /usr/local/opt/boost@1.57/include/boost/thread/lock_types.hpp:346:10: note: mutex acquired here
       m->lock();
          ^
-  CXX      qt/libbitcoinqt_a-moc_askpassphrasedialog.o
+  CXX      qt/libbitcoinqt_a-moc_askpassreexasedialog.o
   CXX      qt/libbitcoinqt_a-moc_startoptionsdialog.o
-In file included from qt/zphrcontroldialog.cpp:5:
-In file included from ./qt/zphrcontroldialog.h:10:
+In file included from qt/zreexcontroldialog.cpp:5:
+In file included from ./qt/zreexcontroldialog.h:10:
 In file included from ./primitives/zerocoin.h:12:
 In file included from ./key.h:11:
 In file included from ./allocators.h:16:
@@ -6164,14 +6164,14 @@ criticalblock1
   CXX      qt/libbitcoinqt_a-moc_walletmodel.o
 1 warning generated.
   CXX      qt/libbitcoinqt_a-moc_walletview.o
-  CXX      qt/libbitcoinqt_a-moc_zphrcontroldialog.o
+  CXX      qt/libbitcoinqt_a-moc_zreexcontroldialog.o
   CXX      qt/libbitcoinqt_a-paymentrequest.pb.o
-  CXX      qt/libbitcoinqt_a-qrc_phore.o
-  CXX      qt/libbitcoinqt_a-qrc_phore_locale.o
+  CXX      qt/libbitcoinqt_a-qrc_retrex.o
+  CXX      qt/libbitcoinqt_a-qrc_retrex_locale.o
   AR       libbitcoin_wallet.a
-  CXXLD    phore-cli
-  CXXLD    phore-tx
-  CXXLD    phored
+  CXXLD    retrex-cli
+  CXXLD    retrex-tx
+  CXXLD    retrexd
 In file included from qt/moc_walletmodel.cpp:9:
 In file included from ./qt/walletmodel.h:8:
 In file included from ./qt/paymentrequestplus.h:13:
@@ -6254,7 +6254,7 @@ criticalblock1
 1 warning generated.
 1 warning generated.
   AR       qt/libbitcoinqt.a
-  OBJCXXLD qt/phore-qt
+  OBJCXXLD qt/retrex-qt
 ld: warning: text-based stub file /System/Library/Frameworks//Foundation.framework/Foundation.tbd and library file /System/Library/Frameworks//Foundation.framework/Foundation are out of sync. Falling back to library file for linking.
 ld: warning: text-based stub file /System/Library/Frameworks//ApplicationServices.framework/ApplicationServices.tbd and library file /System/Library/Frameworks//ApplicationServices.framework/ApplicationServices are out of sync. Falling back to library file for linking.
 ld: warning: text-based stub file /System/Library/Frameworks//AppKit.framework/AppKit.tbd and library file /System/Library/Frameworks//AppKit.framework/AppKit are out of sync. Falling back to library file for linking.

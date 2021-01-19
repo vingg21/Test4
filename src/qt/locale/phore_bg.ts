@@ -62,12 +62,12 @@
         <translation>Получаващ адрес</translation>
     </message>
     <message>
-        <source>These are your Phore addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Това са вашите Phore адреси за изпращане на плащания. Винаги проверявайте количеството и адреса на получателя, преди да изпратите монети.</translation>
+        <source>These are your Retrex addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Това са вашите Retrex адреси за изпращане на плащания. Винаги проверявайте количеството и адреса на получателя, преди да изпратите монети.</translation>
     </message>
     <message>
-        <source>These are your Phore addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Това са вашите Phore адреси за получаване на плащания. Препоръчително е да използвате нови адреси за получаване за всяка транзакция.</translation>
+        <source>These are your Retrex addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>Това са вашите Retrex адреси за получаване на плащания. Препоръчително е да използвате нови адреси за получаване за всяка транзакция.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -114,21 +114,21 @@
     </message>
 </context>
 <context>
-    <name>AskPassphraseDialog</name>
+    <name>AskPassreexaseDialog</name>
     <message>
-        <source>Passphrase Dialog</source>
+        <source>Passreexase Dialog</source>
         <translation>Поле за парола</translation>
     </message>
     <message>
-        <source>Enter passphrase</source>
+        <source>Enter passreexase</source>
         <translation>Въведете парола</translation>
     </message>
     <message>
-        <source>New passphrase</source>
+        <source>New passreexase</source>
         <translation>Нова парола</translation>
     </message>
     <message>
-        <source>Repeat new passphrase</source>
+        <source>Repeat new passreexase</source>
         <translation>Повторете новата парола</translation>
     </message>
     <message>
@@ -140,7 +140,7 @@
         <translation>Само за анонимизация и стейкване</translation>
     </message>
     <message>
-        <source>Enter the new passphrase to the wallet.&lt;br/&gt;Please use a passphrase of &lt;b&gt;ten or more random characters&lt;/b&gt;, or &lt;b&gt;eight or more words&lt;/b&gt;.</source>
+        <source>Enter the new passreexase to the wallet.&lt;br/&gt;Please use a passreexase of &lt;b&gt;ten or more random characters&lt;/b&gt;, or &lt;b&gt;eight or more words&lt;/b&gt;.</source>
         <translation>Въведете нова паролата за портфейла.&lt;br/&gt;Моля, използвайте парола от &lt;b&gt;десет или повече случайни символа&lt;/b&gt; или &lt;b&gt;осем или повече думи&lt;/b&gt;.</translation>
     </message>
     <message>
@@ -148,7 +148,7 @@
         <translation>Шифрирай портфейла</translation>
     </message>
     <message>
-        <source>This operation needs your wallet passphrase to unlock the wallet.</source>
+        <source>This operation needs your wallet passreexase to unlock the wallet.</source>
         <translation>Това действие изисква вашата портфейлна парола, за да отключи портфейла.</translation>
     </message>
     <message>
@@ -156,7 +156,7 @@
         <translation>Отключване на портфейла</translation>
     </message>
     <message>
-        <source>This operation needs your wallet passphrase to decrypt the wallet.</source>
+        <source>This operation needs your wallet passreexase to decrypt the wallet.</source>
         <translation>Това действие изисква вашата портфейлна парола, за да декриптира портфейла.</translation>
     </message>
     <message>
@@ -164,11 +164,11 @@
         <translation>Декриптиране на портфейла</translation>
     </message>
     <message>
-        <source>Change passphrase</source>
+        <source>Change passreexase</source>
         <translation>Смени паролата</translation>
     </message>
     <message>
-        <source>Enter the old and new passphrase to the wallet.</source>
+        <source>Enter the old and new passreexase to the wallet.</source>
         <translation>Въведете старата и новата пароли за портфейла.</translation>
     </message>
     <message>
@@ -176,16 +176,16 @@
         <translation>Потвърдете шифрирането на портфейла</translation>
     </message>
     <message>
-        <source>Phore will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your PHRs from being stolen by malware infecting your computer.</source>
-        <translation>Phore сега ще се затвори, за да довърши процеса по шифриране. Запомнете, че шифрирането на вашия портфейл не може напълно да защити вашия Phore от това, да бъде откраднат чрез злонамерен софутуер, инфектирал вашия компютър.</translation>
+        <source>Retrex will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your REEXs from being stolen by malware infecting your computer.</source>
+        <translation>Retrex сега ще се затвори, за да довърши процеса по шифриране. Запомнете, че шифрирането на вашия портфейл не може напълно да защити вашия Retrex от това, да бъде откраднат чрез злонамерен софутуер, инфектирал вашия компютър.</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
         <translation>Сигурни ли сте, че искате да шифрирате вашия портфейл?</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR PHR&lt;/b&gt;!</source>
-        <translation>&lt;b&gt;Внимание: Ако шифрирате вашия портфейл и загубите вашата парола, вие ще ЗАГУБИТЕ ВСИЧКИТЕ ВИ PHR&lt;/b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passreexase, you will &lt;b&gt;LOSE ALL OF YOUR REEX&lt;/b&gt;!</source>
+        <translation>&lt;b&gt;Внимание: Ако шифрирате вашия портфейл и загубите вашата парола, вие ще ЗАГУБИТЕ ВСИЧКИТЕ ВИ REEX&lt;/b&gt;!</translation>
     </message>
     <message>
         <source>Wallet encrypted</source>
@@ -204,7 +204,7 @@
         <translation>Шифрирането на портфейла се провали, поради вътрешна грешка. Вашият портфейл не беше шифриран.</translation>
     </message>
     <message>
-        <source>The supplied passphrases do not match.</source>
+        <source>The supplied passreexases do not match.</source>
         <translation>Попълнените пароли не съвпадат.</translation>
     </message>
     <message>
@@ -212,7 +212,7 @@
         <translation>Отключването на портфейла беше неуспешно</translation>
     </message>
     <message>
-        <source>The passphrase entered for the wallet decryption was incorrect.</source>
+        <source>The passreexase entered for the wallet decryption was incorrect.</source>
         <translation>Паролата, въведена за декриптирането на портфейла, е неправилна.</translation>
     </message>
     <message>
@@ -220,7 +220,7 @@
         <translation>Декриптирането на портфейла беше неуспешно</translation>
     </message>
     <message>
-        <source>Wallet passphrase was successfully changed.</source>
+        <source>Wallet passreexase was successfully changed.</source>
         <translation>Паролата на портфейла беше сменена успешно.</translation>
     </message>
     <message>
@@ -239,16 +239,16 @@
         <translation>&amp;BIP 38 Шифриране</translation>
     </message>
     <message>
-        <source>Enter a Phore Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
-        <translation>Въведете Phore адрес, който искате да шифрирате с BIP 38. Въведете парола в средното поле. Натиснете 'шифрирай', за да се изчисли шифррания личен ключ.</translation>
+        <source>Enter a Retrex Address that you would like to encrypt using BIP 38. Enter a passreexase in the middle box. Press encrypt to compute the encrypted private key.</source>
+        <translation>Въведете Retrex адрес, който искате да шифрирате с BIP 38. Въведете парола в средното поле. Натиснете 'шифрирай', за да се изчисли шифррания личен ключ.</translation>
     </message>
     <message>
         <source>Address:</source>
         <translation>Адрес:</translation>
     </message>
     <message>
-        <source>The Phore address to sign the message with</source>
-        <translation>Phore адреса, с който да подпишете съобщението</translation>
+        <source>The Retrex address to sign the message with</source>
+        <translation>Retrex адреса, с който да подпишете съобщението</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -267,7 +267,7 @@
         <translation>Алт+П</translation>
     </message>
     <message>
-        <source>Passphrase: </source>
+        <source>Passreexase: </source>
         <translation>Парола:</translation>
     </message>
     <message>
@@ -279,8 +279,8 @@
         <translation>Копирай сегашния подпис в системния буфер</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this Phore address</source>
-        <translation>Подпишете съобщението, за да докажете, че притежавате този Phore адрес</translation>
+        <source>Sign the message to prove you own this Retrex address</source>
+        <translation>Подпишете съобщението, за да докажете, че притежавате този Retrex адрес</translation>
     </message>
     <message>
         <source>Encrypt &amp;Key</source>
@@ -299,16 +299,16 @@
         <translation>&amp;BIP 38 Дешфриране</translation>
     </message>
     <message>
-        <source>Enter the BIP 38 encrypted private key. Enter the passphrase in the middle box. Click Decrypt Key to compute the private key. After the key is decrypted, clicking 'Import Address' will add this private key to the wallet.</source>
+        <source>Enter the BIP 38 encrypted private key. Enter the passreexase in the middle box. Click Decrypt Key to compute the private key. After the key is decrypted, clicking 'Import Address' will add this private key to the wallet.</source>
         <translation>Въведете личният си BIP 38 ключ. Въведете тайната фраза в средното поле. Избери Дешифриращия Ключ за да изчислим личния ключ. След като ключа се дешифрира, за да добаите ключа към портфейла, кликнете "Импортирай адрес".</translation>
     </message>
     <message>
-        <source>The Phore address the message was signed with</source>
-        <translation>Phore адреса, който е подписано съобщението</translation>
+        <source>The Retrex address the message was signed with</source>
+        <translation>Retrex адреса, който е подписано съобщението</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified Phore address</source>
-        <translation>Поверете съобщението, за да се уверите, че е подписано със зададения Phore адрес</translation>
+        <source>Verify the message to ensure it was signed with the specified Retrex address</source>
+        <translation>Поверете съобщението, за да се уверите, че е подписано със зададения Retrex адрес</translation>
     </message>
     <message>
         <source>Decrypt &amp;Key</source>
@@ -331,7 +331,7 @@
         <translation>Избери "Дешифрирай Ключ" за да изчислим ключа</translation>
     </message>
     <message>
-        <source>The entered passphrase is invalid. </source>
+        <source>The entered passreexase is invalid. </source>
         <translation>Въведената фраза е невалидна.</translation>
     </message>
     <message>
@@ -363,7 +363,7 @@
         <translation>Неуспешно дешифриране.</translation>
     </message>
     <message>
-        <source>Please check the key and passphrase and try again.</source>
+        <source>Please check the key and passreexase and try again.</source>
         <translation>Моля проверете ключа и фразата и опитайте отново.</translation>
     </message>
     <message>
@@ -470,11 +470,11 @@
         <translation>Направи резерва на друго място</translation>
     </message>
     <message>
-        <source>&amp;Change Passphrase...</source>
+        <source>&amp;Change Passreexase...</source>
         <translation>&amp;Промени фразата...</translation>
     </message>
     <message>
-        <source>Change the passphrase used for wallet encryption</source>
+        <source>Change the passreexase used for wallet encryption</source>
         <translation>Промени фразата използвана за шифриране</translation>
     </message>
     <message>
@@ -602,24 +602,24 @@
         <translation>Колан с инструменти</translation>
     </message>
     <message>
-        <source>Phore Core</source>
-        <translation>Phore Ядро</translation>
+        <source>Retrex Core</source>
+        <translation>Retrex Ядро</translation>
     </message>
     <message>
-        <source>Send coins to a Phore address</source>
-        <translation>Изпратете монети до Phore адрес</translation>
+        <source>Send coins to a Retrex address</source>
+        <translation>Изпратете монети до Retrex адрес</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and phore: URIs)</source>
-        <translation>Поискай плащане (генерира QR кодове и  Phore:URI)</translation>
+        <source>Request payments (generates QR codes and retrex: URIs)</source>
+        <translation>Поискай плащане (генерира QR кодове и  Retrex:URI)</translation>
     </message>
     <message>
         <source>&amp;Privacy</source>
         <translation>&amp;Поверителност</translation>
     </message>
     <message>
-        <source>Privacy Action for zPHR and Obfuscation</source>
-        <translation>Поверителни действия за zPHR и Обфускация</translation>
+        <source>Privacy Action for zREEX and Obfuscation</source>
+        <translation>Поверителни действия за zREEX и Обфускация</translation>
     </message>
     <message>
         <source>&amp;Masternodes</source>
@@ -630,31 +630,31 @@
         <translation>Разгледай мастърноудове</translation>
     </message>
     <message>
-        <source>&amp;About Phore Core</source>
-        <translation>&amp;Относно Phore Ядрото</translation>
+        <source>&amp;About Retrex Core</source>
+        <translation>&amp;Относно Retrex Ядрото</translation>
     </message>
     <message>
-        <source>Show information about Phore Core</source>
-        <translation>Информациза за Phore Ядрото</translation>
+        <source>Show information about Retrex Core</source>
+        <translation>Информациза за Retrex Ядрото</translation>
     </message>
     <message>
-        <source>Modify configuration options for Phore</source>
-        <translation>Промени Phore конфигурацията</translation>
+        <source>Modify configuration options for Retrex</source>
+        <translation>Промени Retrex конфигурацията</translation>
     </message>
     <message>
-        <source>Sign messages with your Phore addresses to prove you own them</source>
-        <translation>Подпишете съобщения със своте Phore адреси, за да докажете че са Ваши</translation>
+        <source>Sign messages with your Retrex addresses to prove you own them</source>
+        <translation>Подпишете съобщения със своте Retrex адреси, за да докажете че са Ваши</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified Phore addresses</source>
-        <translation>Проеврете съобщения, за да се убедите, че са подписани с указаните Phore адреси</translation>
+        <source>Verify messages to ensure they were signed with specified Retrex addresses</source>
+        <translation>Проеврете съобщения, за да се убедите, че са подписани с указаните Retrex адреси</translation>
     </message>
     <message>
         <source>&amp;BIP38 tool</source>
         <translation>&amp;BIP38 инструмент</translation>
     </message>
     <message>
-        <source>Encrypt and decrypt private keys using a passphrase</source>
+        <source>Encrypt and decrypt private keys using a passreexase</source>
         <translation>Шифрирай и дешифрирай личните ключове с фраза</translation>
     </message>
     <message>
@@ -678,8 +678,8 @@
         <translation>Отвори Мастърноуд конфигурационния файл</translation>
     </message>
     <message>
-        <source>Open a Phore: URI or payment request</source>
-        <translation>Отвори Phore:URI платежно нареждане</translation>
+        <source>Open a Retrex: URI or payment request</source>
+        <translation>Отвори Retrex:URI платежно нареждане</translation>
     </message>
     <message>
         <source>&amp;Blockchain explorer</source>
@@ -690,16 +690,16 @@
         <translation>Прозорец на блок сондата</translation>
     </message>
     <message>
-        <source>Show the Phore Core help message to get a list with possible Phore command-line options</source>
-        <translation>Разкрийте Помощ за Phore Ядрото, за да видите списък с възможни писмени команди.</translation>
+        <source>Show the Retrex Core help message to get a list with possible Retrex command-line options</source>
+        <translation>Разкрийте Помощ за Retrex Ядрото, за да видите списък с възможни писмени команди.</translation>
     </message>
     <message>
-        <source>Phore Core client</source>
-        <translation>Клиент Phore Ядро</translation>
+        <source>Retrex Core client</source>
+        <translation>Клиент Retrex Ядро</translation>
     </message>
     <message numerus="yes">
-        <source>%n active connection(s) to Phore network</source>
-        <translation><numerusform>%n активни връзки към Phore мрежата</numerusform><numerusform>%n активни свръзки към Phore мрежата</numerusform></translation>
+        <source>%n active connection(s) to Retrex network</source>
+        <translation><numerusform>%n активни връзки към Retrex мрежата</numerusform><numerusform>%n активни свръзки към Retrex мрежата</numerusform></translation>
     </message>
     <message>
         <source>Synchronizing with network...</source>
@@ -853,8 +853,8 @@ Address: %4
         <translation>ТекстовЕтикет</translation>
     </message>
     <message>
-        <source>Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (phore.conf).</source>
-        <translation>Не всички преводи ще бъдат показани. За да разгледате всички преводи, трябва да зададете txindex=1 в конфигурационния файл (phore.conf).</translation>
+        <source>Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (retrex.conf).</source>
+        <translation>Не всички преводи ще бъдат показани. За да разгледате всички преводи, трябва да зададете txindex=1 в конфигурационния файл (retrex.conf).</translation>
     </message>
 </context>
 <context>
@@ -1142,8 +1142,8 @@ Address: %4
         <translation>Редактирай адрес за изпращане</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid Phore address.</source>
-        <translation>Зададения адрес "%1"не е валиден Phore адрес.</translation>
+        <source>The entered address "%1" is not a valid Retrex address.</source>
+        <translation>Зададения адрес "%1"не е валиден Retrex адрес.</translation>
     </message>
     <message>
         <source>The entered address "%1" is already in the address book.</source>
@@ -1188,16 +1188,16 @@ Address: %4
         <translation>версия</translation>
     </message>
     <message>
-        <source>Phore Core</source>
-        <translation>Phore Ядро</translation>
+        <source>Retrex Core</source>
+        <translation>Retrex Ядро</translation>
     </message>
     <message>
         <source>(%1-bit)</source>
         <translation>(%1-bit)</translation>
     </message>
     <message>
-        <source>About Phore Core</source>
-        <translation>Относно Phore Ядрото</translation>
+        <source>About Retrex Core</source>
+        <translation>Относно Retrex Ядрото</translation>
     </message>
     <message>
         <source>Command-line options</source>
@@ -1243,16 +1243,16 @@ Address: %4
         <translation>Привет</translation>
     </message>
     <message>
-        <source>Welcome to Phore Core.</source>
-        <translation>Добре Дошли в Phore Ядрото</translation>
+        <source>Welcome to Retrex Core.</source>
+        <translation>Добре Дошли в Retrex Ядрото</translation>
     </message>
     <message>
-        <source>As this is the first time the program is launched, you can choose where Phore Core will store its data.</source>
-        <translation>Тъй като това е първия път, в който стартирате програмата, имате възможността да изберете къде Phore Ядрото ще съхранява своите данни.</translation>
+        <source>As this is the first time the program is launched, you can choose where Retrex Core will store its data.</source>
+        <translation>Тъй като това е първия път, в който стартирате програмата, имате възможността да изберете къде Retrex Ядрото ще съхранява своите данни.</translation>
     </message>
     <message>
-        <source>Phore Core will download and store a copy of the Phore block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
-        <translation>Phore Ядрото ще изтегли и запише копие на целия Phore блокчейн. Поне %1 гигабайта ще бъдат съхранявани в тази папка, като тенденцията е файла да расте. Портфейла също ще бъде запазен в тази папка.</translation>
+        <source>Retrex Core will download and store a copy of the Retrex block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
+        <translation>Retrex Ядрото ще изтегли и запише копие на целия Retrex блокчейн. Поне %1 гигабайта ще бъдат съхранявани в тази папка, като тенденцията е файла да расте. Портфейла също ще бъде запазен в тази папка.</translation>
     </message>
     <message>
         <source>Use the default data directory</source>
@@ -1263,8 +1263,8 @@ Address: %4
         <translation>Задай своя папка за данни:</translation>
     </message>
     <message>
-        <source>Phore Core</source>
-        <translation>Phore Ядро</translation>
+        <source>Retrex Core</source>
+        <translation>Retrex Ядро</translation>
     </message>
     <message>
         <source>Error: Specified data directory "%1" cannot be created.</source>
@@ -1405,12 +1405,12 @@ Address: %4
         <translation>Въведете адреса на Получателя</translation>
     </message>
     <message>
-        <source>MultiSend allows you to automatically send up to 100% of your stake or masternode reward to a list of other Phore addresses after it matures.
-To Add: enter percentage to give and Phore address to add to the MultiSend vector.
+        <source>MultiSend allows you to automatically send up to 100% of your stake or masternode reward to a list of other Retrex addresses after it matures.
+To Add: enter percentage to give and Retrex address to add to the MultiSend vector.
 To Delete: Enter address to delete and press delete.
 MultiSend will not be activated unless you have clicked Activate</source>
-        <translation>МултиИзпращане Ви позволява автоматично да изпращате до 100% от вашите стейк или мастърноуд възнаграждения към списък от други Phore адреси.
-Да Добавите: въведете процент и задайте Phore адрес към вектора за МултиИзпращане
+        <translation>МултиИзпращане Ви позволява автоматично да изпращате до 100% от вашите стейк или мастърноуд възнаграждения към списък от други Retrex адреси.
+Да Добавите: въведете процент и задайте Retrex адрес към вектора за МултиИзпращане
 Да Прамахнете: Въведете адрес за изстриване и натиснете истрий (del).
 МултиИзпращането няма да бъде активирано докато не кликнете "Активирай"</translation>
     </message>
@@ -1548,47 +1548,47 @@ Please check the address and try again.</source>
         <translation>Изберете ниво на поверителност.</translation>
     </message>
     <message>
-        <source>Use 2 separate masternodes to mix funds up to 10000 PHR</source>
-        <translation>Използвай 2 различни мастърноуда за смесване на средства над 10000 PHR</translation>
+        <source>Use 2 separate masternodes to mix funds up to 10000 REEX</source>
+        <translation>Използвай 2 различни мастърноуда за смесване на средства над 10000 REEX</translation>
     </message>
     <message>
-        <source>Use 8 separate masternodes to mix funds up to 10000 PHR</source>
-        <translation>Използвай 8 различни мастърноуда за да смесите средства до 10000 PHR</translation>
+        <source>Use 8 separate masternodes to mix funds up to 10000 REEX</source>
+        <translation>Използвай 8 различни мастърноуда за да смесите средства до 10000 REEX</translation>
     </message>
     <message>
         <source>Use 16 separate masternodes</source>
         <translation>Използвай 16 различни мастърноуда</translation>
     </message>
     <message>
-        <source>This option is the quickest and will cost about ~0.025 PHR to anonymize 10000 PHR</source>
-        <translation>Това е най-бързия метод и ще струва около 0.025 PHR за да скриете 10000 PHR</translation>
+        <source>This option is the quickest and will cost about ~0.025 REEX to anonymize 10000 REEX</source>
+        <translation>Това е най-бързия метод и ще струва около 0.025 REEX за да скриете 10000 REEX</translation>
     </message>
     <message>
-        <source>This option is moderately fast and will cost about 0.05 PHR to anonymize 10000 PHR</source>
-        <translation>Тази опция е сравнително бърза и ще струва около 0.05 PHR за да скриете 10000 PHR</translation>
+        <source>This option is moderately fast and will cost about 0.05 REEX to anonymize 10000 REEX</source>
+        <translation>Тази опция е сравнително бърза и ще струва около 0.05 REEX за да скриете 10000 REEX</translation>
     </message>
     <message>
         <source>This is the slowest and most secure option. Using maximum anonymity will cost</source>
-        <translation>Това е най-бавния и най-сигурен вариант за скриване на PHR. Използването й ще струва</translation>
+        <translation>Това е най-бавния и най-сигурен вариант за скриване на REEX. Използването й ще струва</translation>
     </message>
     <message>
-        <source>0.1 PHR per 10000 PHR you anonymize.</source>
-        <translation>0.1 PHR за 10000 скрити PHR</translation>
+        <source>0.1 REEX per 10000 REEX you anonymize.</source>
+        <translation>0.1 REEX за 10000 скрити REEX</translation>
     </message>
     <message>
         <source>Obfuscation Configuration</source>
         <translation>Конфигурация на Обфускацията</translation>
     </message>
     <message>
-        <source>Obfuscation was successfully set to basic (%1 and 2 rounds). You can change this at any time by opening Phore's configuration screen.</source>
+        <source>Obfuscation was successfully set to basic (%1 and 2 rounds). You can change this at any time by opening Retrex's configuration screen.</source>
         <translation>Обфускацията е успешно конфигурирана на елементарно ниво (%1 и 2 кръга). Moжете да промените тази настройка по всяко време от същото място.</translation>
     </message>
     <message>
-        <source>Obfuscation was successfully set to high (%1 and 8 rounds). You can change this at any time by opening Phore's configuration screen.</source>
+        <source>Obfuscation was successfully set to high (%1 and 8 rounds). You can change this at any time by opening Retrex's configuration screen.</source>
         <translation>Обфускацията е успешно конфигурирана на високо ниво (%1 и 8 кръга). Moжете да промените тази настройка по всяко време от същото място.</translation>
     </message>
     <message>
-        <source>Obfuscation was successfully set to maximum (%1 and 16 rounds). You can change this at any time by opening Phore's configuration screen.</source>
+        <source>Obfuscation was successfully set to maximum (%1 and 16 rounds). You can change this at any time by opening Retrex's configuration screen.</source>
         <translation>Обфускацията е успешно конфигурирана на максимално ниво (%1 и 16 кръга). Moжете да промените тази настройка по всяко време от същото място.</translation>
     </message>
 </context>
@@ -1650,8 +1650,8 @@ Please check the address and try again.</source>
         <translation>Aко изключите харча на непотвърдено ресто, рестото от превод&lt;br/&gt;не може да се използва, докато превода не получи поне 1 потвърждение. &lt;br/&gt;Това влияе и на начина по който общите Ви средства се преизчисляват.</translation>
     </message>
     <message>
-        <source>Automatically open the Phore client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Автоматично отвори Phore порта в рутера. Това става само ако рутера Ви подържа UPnP и последния е включен.</translation>
+        <source>Automatically open the Retrex client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Автоматично отвори Retrex порта в рутера. Това става само ако рутера Ви подържа UPnP и последния е включен.</translation>
     </message>
     <message>
         <source>Accept connections from outside</source>
@@ -1670,12 +1670,12 @@ Please check the address and try again.</source>
         <translation>Експерт</translation>
     </message>
     <message>
-        <source>Automatically start Phore after logging in to the system.</source>
-        <translation>Стартирай Phore автоматично след влизане в системата.</translation>
+        <source>Automatically start Retrex after logging in to the system.</source>
+        <translation>Стартирай Retrex автоматично след влизане в системата.</translation>
     </message>
     <message>
-        <source>&amp;Start Phore on system login</source>
-        <translation>&amp;Стартирай Phore заедно с операционната система</translation>
+        <source>&amp;Start Retrex on system login</source>
+        <translation>&amp;Стартирай Retrex заедно с операционната система</translation>
     </message>
     <message>
         <source>Whether to show coin control features or not.</source>
@@ -1702,34 +1702,34 @@ Please check the address and try again.</source>
         <translation>&amp;Мрежа</translation>
     </message>
     <message>
-        <source>The user interface language can be set here. This setting will take effect after restarting Phore.</source>
+        <source>The user interface language can be set here. This setting will take effect after restarting Retrex.</source>
         <translation>Промяна на езика. Настройката е активна след рестарт на портфейла.</translation>
     </message>
     <message>
         <source>Language missing or translation incomplete? Help contributing translations here:
-https://www.transifex.com/phore-project/phore-project-translations</source>
+https://www.transifex.com/retrex-project/retrex-project-translations</source>
         <translation>Липсващ език или непълен превод? Помогнете с преводите тук:
-https://www.transifex.com/phore-project/phore-project-translations</translation>
+https://www.transifex.com/retrex-project/retrex-project-translations</translation>
     </message>
     <message>
-        <source>Percentage of incoming PHR which get automatically converted to zPHR via Zerocoin Protocol (min: 10%)</source>
-        <translation>Процент от входящите PHR, който автоматично да се конвертира в zPHR посредтвом Zerocoin Протокола (мин: 10%)</translation>
+        <source>Percentage of incoming REEX which get automatically converted to zREEX via Zerocoin Protocol (min: 10%)</source>
+        <translation>Процент от входящите REEX, който автоматично да се конвертира в zREEX посредтвом Zerocoin Протокола (мин: 10%)</translation>
     </message>
     <message>
-        <source>Percentage of autominted zPHR</source>
-        <translation>Процент автоматично сечени zPHR</translation>
+        <source>Percentage of autominted zREEX</source>
+        <translation>Процент автоматично сечени zREEX</translation>
     </message>
     <message>
-        <source>Wait with automatic conversion to Zerocoin until enough PHR for this denomination is available</source>
-        <translation>Не бързай с автоматичното конвертиране в zPHR докато не се съберат достатъчно PHR за тази деноминация</translation>
+        <source>Wait with automatic conversion to Zerocoin until enough REEX for this denomination is available</source>
+        <translation>Не бързай с автоматичното конвертиране в zREEX докато не се съберат достатъчно REEX за тази деноминация</translation>
     </message>
     <message>
-        <source>Preferred Automint zPHR Denomination</source>
-        <translation>Предпочитани деноминации, в които да се сече автоматичен zPHR</translation>
+        <source>Preferred Automint zREEX Denomination</source>
+        <translation>Предпочитани деноминации, в които да се сече автоматичен zREEX</translation>
     </message>
     <message>
-        <source>Connect to the Phore network through a SOCKS5 proxy.</source>
-        <translation>Свържи се с Phore мрежата със SOCKS5 прокси.</translation>
+        <source>Connect to the Retrex network through a SOCKS5 proxy.</source>
+        <translation>Свържи се с Retrex мрежата със SOCKS5 прокси.</translation>
     </message>
     <message>
         <source>Proxy &amp;IP:</source>
@@ -1859,8 +1859,8 @@ https://www.transifex.com/phore-project/phore-project-translations</translation>
         <translation>От</translation>
     </message>
     <message>
-        <source>PHR Balances</source>
-        <translation>PHR Баланс</translation>
+        <source>REEX Balances</source>
+        <translation>REEX Баланс</translation>
     </message>
     <message>
         <source>Available:</source>
@@ -1887,8 +1887,8 @@ https://www.transifex.com/phore-project/phore-project-translations</translation>
         <translation>Възнаграждение от стейкване или мастърноуд, които все още не са узрели.</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Phore network after a connection is established, but this process has not completed yet.</source>
-        <translation>Информацията на вашия екран може би е стара. Вашия портфейла синхронизира автоматично с Phore мрежата след като има успешна свръзка, но процеса отнема време и не е завършил все още.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Retrex network after a connection is established, but this process has not completed yet.</source>
+        <translation>Информацията на вашия екран може би е стара. Вашия портфейла синхронизира автоматично с Retrex мрежата след като има успешна свръзка, но процеса отнема време и не е завършил все още.</translation>
     </message>
     <message>
         <source>Unconfirmed transactions to watch-only addresses</source>
@@ -1927,12 +1927,12 @@ https://www.transifex.com/phore-project/phore-project-translations</translation>
         <translation>Комбиниран общ баланс (само озрелите монети)</translation>
     </message>
     <message>
-        <source>PHR:</source>
-        <translation>PHR:</translation>
+        <source>REEX:</source>
+        <translation>REEX:</translation>
     </message>
     <message>
-        <source>zPHR:</source>
-        <translation>zPHR:</translation>
+        <source>zREEX:</source>
+        <translation>zREEX:</translation>
     </message>
     <message>
         <source>0 %</source>
@@ -1974,12 +1974,12 @@ https://www.transifex.com/phore-project/phore-project-translations</translation>
         <translation>Грешен адрес за плащане %1</translation>
     </message>
     <message>
-        <source>Cannot start phore: click-to-pay handler</source>
-        <translation>Провал при стартирането на phore: click-to-pay обработвател</translation>
+        <source>Cannot start retrex: click-to-pay handler</source>
+        <translation>Провал при стартирането на retrex: click-to-pay обработвател</translation>
     </message>
     <message>
-        <source>URI cannot be parsed! This can be caused by an invalid Phore address or malformed URI parameters.</source>
-        <translation>URI не може да се парсне. Вероятна причина е невалиден Phore адрес или зле-форматирани URI Параметри.</translation>
+        <source>URI cannot be parsed! This can be caused by an invalid Retrex address or malformed URI parameters.</source>
+        <translation>URI не може да се парсне. Вероятна причина е невалиден Retrex адрес или зле-форматирани URI Параметри.</translation>
     </message>
     <message>
         <source>Payment request file cannot be read! This can be caused by an invalid payment request file.</source>
@@ -2060,24 +2060,24 @@ https://www.transifex.com/phore-project/phore-project-translations</translation>
 <context>
     <name>PrivacyDialog</name>
     <message>
-        <source>PHR which were anonymized via Zerocin Protocol</source>
-        <translation>PHR скрити посредством Зерокойн протокола</translation>
+        <source>REEX which were anonymized via Zerocin Protocol</source>
+        <translation>REEX скрити посредством Зерокойн протокола</translation>
     </message>
     <message>
-        <source>Zerocoin PHR (zPHR)</source>
-        <translation>Zerocoin PHR (zPHR)</translation>
+        <source>Zerocoin REEX (zREEX)</source>
+        <translation>Zerocoin REEX (zREEX)</translation>
     </message>
     <message>
         <source>Zerocoin Actions:</source>
         <translation>Zerocoin Действия:</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Phore network after a connection is established, but this process has not completed yet.</source>
-        <translation>Информацията на вашия екран може би е стара. Вашия портфейла синхронизира автоматично с Phore мрежата след като има успешна свръзка, но процеса отнема време и не е завършил все още.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Retrex network after a connection is established, but this process has not completed yet.</source>
+        <translation>Информацията на вашия екран може би е стара. Вашия портфейла синхронизира автоматично с Retrex мрежата след като има успешна свръзка, но процеса отнема време и не е завършил все още.</translation>
     </message>
     <message>
-        <source>Enter an amount of Phr to convert to zPhr</source>
-        <translation>Въведете колко PHR  да се конвертират в zPHR</translation>
+        <source>Enter an amount of Reex to convert to zReex</source>
+        <translation>Въведете колко REEX  да се конвертират в zREEX</translation>
     </message>
     <message>
         <source>Mint Zerocoin</source>
@@ -2088,16 +2088,16 @@ https://www.transifex.com/phore-project/phore-project-translations</translation>
         <translation>0</translation>
     </message>
     <message>
-        <source>zPHR</source>
-        <translation>zPHR</translation>
+        <source>zREEX</source>
+        <translation>zREEX</translation>
     </message>
     <message>
         <source>Available for Minting:</source>
         <translation>Налични за сечене:</translation>
     </message>
     <message>
-        <source>0.000 000 00 PHR</source>
-        <translation>0.000 000 00 PHR</translation>
+        <source>0.000 000 00 REEX</source>
+        <translation>0.000 000 00 REEX</translation>
     </message>
     <message>
         <source>Reset Zerocoin Wallet DB. Deletes transactions that did not make it into the blockchain.</source>
@@ -2132,12 +2132,12 @@ https://www.transifex.com/phore-project/phore-project-translations</translation>
         <translation>Състояния и/или Съобщения от последните действия по сечене на монети.</translation>
     </message>
     <message>
-        <source>zPhr Control</source>
-        <translation>zPHR Контрол</translation>
+        <source>zReex Control</source>
+        <translation>zREEX Контрол</translation>
     </message>
     <message>
-        <source>zPhr Selected:</source>
-        <translation>Избрани zPHR:</translation>
+        <source>zReex Selected:</source>
+        <translation>Избрани zREEX:</translation>
     </message>
     <message>
         <source>Quantity Selected:</source>
@@ -2156,8 +2156,8 @@ https://www.transifex.com/phore-project/phore-project-translations</translation>
         <translation>Налични:</translation>
     </message>
     <message>
-        <source>0 zPHR</source>
-        <translation>0 zPHR</translation>
+        <source>0 zREEX</source>
+        <translation>0 zREEX</translation>
     </message>
     <message>
         <source>Security Level for Zerocoin Transactions. More is better, but needs more time and resources.</source>
@@ -2176,7 +2176,7 @@ https://www.transifex.com/phore-project/phore-project-translations</translation>
         <translation>Плати На:</translation>
     </message>
     <message>
-        <source>The Phore address to send the payment to. Creates local payment to yourself when empty.</source>
+        <source>The Retrex address to send the payment to. Creates local payment to yourself when empty.</source>
         <translation>Адреса на който да изпратим плащането. Ако е празно - плащането е до себе си.</translation>
     </message>
     <message>
@@ -2209,7 +2209,7 @@ https://www.transifex.com/phore-project/phore-project-translations</translation>
     </message>
     <message>
         <source>Convert Change to Zerocoin (might cost additional fees)</source>
-        <translation>Изсечи zPHR от рестото (ще струва допълнително заради таксите)</translation>
+        <translation>Изсечи zREEX от рестото (ще струва допълнително заради таксите)</translation>
     </message>
     <message>
         <source>If checked, the wallet tries to minimize the returning change instead of minimizing the number of spent denominations.</source>
@@ -2376,11 +2376,11 @@ https://www.transifex.com/phore-project/phore-project-translations</translation>
         <translation>Копирай сумата</translation>
     </message>
     <message>
-        <source>Zerocoin functionality is not enabled on the Phore network yet.</source>
-        <translation>Zerocoin функцията все още не е активирана в Phore мрежата.</translation>
+        <source>Zerocoin functionality is not enabled on the Retrex network yet.</source>
+        <translation>Zerocoin функцията все още не е активирана в Retrex мрежата.</translation>
     </message>
     <message>
-        <source>Error: Your wallet is locked. Please enter the wallet passphrase first.</source>
+        <source>Error: Your wallet is locked. Please enter the wallet passreexase first.</source>
         <translation>Грешка: Портфейла е заключен. Моля първо въведете Вашата парола.</translation>
     </message>
     <message>
@@ -2396,8 +2396,8 @@ https://www.transifex.com/phore-project/phore-project-translations</translation>
         <translation>Успешно изсечени</translation>
     </message>
     <message>
-        <source> zPHR in </source>
-        <translation>zPHR в</translation>
+        <source> zREEX in </source>
+        <translation>zREEX в</translation>
     </message>
     <message>
         <source> sec. Used denominations:
@@ -2430,8 +2430,8 @@ Please be patient...</source>
         <translation>Без 'Плати На' адрес, плащането е локално</translation>
     </message>
     <message>
-        <source>Invalid Phore Address</source>
-        <translation>Невалиден Phore адрес</translation>
+        <source>Invalid Retrex Address</source>
+        <translation>Невалиден Retrex адрес</translation>
     </message>
     <message>
         <source>Invalid Send Amount</source>
@@ -2474,8 +2474,8 @@ Please be patient...</source>
         <translation>Харченето на Zerocoin се провали със статус =</translation>
     </message>
     <message>
-        <source>zPhr Spend #: </source>
-        <translation>zPHR Похарчени #:</translation>
+        <source>zReex Spend #: </source>
+        <translation>zREEX Похарчени #:</translation>
     </message>
     <message>
         <source>denomination: </source>
@@ -2498,8 +2498,8 @@ Please be patient...</source>
         <translation>адрес:</translation>
     </message>
     <message>
-        <source>zPhr Mint</source>
-        <translation>Сечене на zPHR</translation>
+        <source>zReex Mint</source>
+        <translation>Сечене на zREEX</translation>
     </message>
     <message>
         <source>Sending successful, return code: </source>
@@ -2521,8 +2521,8 @@ Please be patient...</source>
         <translation>Сума</translation>
     </message>
     <message>
-        <source>Enter a Phore address (e.g. %1)</source>
-        <translation>Задайте Phore адрес (например %1)</translation>
+        <source>Enter a Retrex address (e.g. %1)</source>
+        <translation>Задайте Retrex адрес (например %1)</translation>
     </message>
     <message>
         <source>%1 d</source>
@@ -2659,8 +2659,8 @@ Please be patient...</source>
         <translation>Блокчейн</translation>
     </message>
     <message>
-        <source>Open the Phore debug log file from the current data directory. This can take a few seconds for large log files.</source>
-        <translation>Отвори Phore дебъг лог файла от сегашната папка. Това може да отнеме известно време за по-дълги файлове.</translation>
+        <source>Open the Retrex debug log file from the current data directory. This can take a few seconds for large log files.</source>
+        <translation>Отвори Retrex дебъг лог файла от сегашната папка. Това може да отнеме известно време за по-дълги файлове.</translation>
     </message>
     <message>
         <source>Number of Masternodes</source>
@@ -2827,8 +2827,8 @@ Please be patient...</source>
         <translation>Изходящи:</translation>
     </message>
     <message>
-        <source>Welcome to the Phore RPC console.</source>
-        <translation>Добре Дошли в RPC конзолата на Phore.</translation>
+        <source>Welcome to the Retrex RPC console.</source>
+        <translation>Добре Дошли в RPC конзолата на Retrex.</translation>
     </message>
     <message>
         <source>Use up and down arrows to navigate history, and &lt;b&gt;Ctrl-L&lt;/b&gt; to clear screen.</source>
@@ -2898,12 +2898,12 @@ Please be patient...</source>
         <translation>Незадължителен етикет, който да асоциираме с адреса за получаване.</translation>
     </message>
     <message>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Phore network.</source>
-        <translation>Съобщение свободен текст, което да се прикачи към платежното нареждане, за да бъде показано когато нареждането се отвори от клиента на когото е изпратено. Обърнете внимание, че съобщението няма да бъде изпратено заедно с плащането по Phore мрежата.</translation>
+        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Retrex network.</source>
+        <translation>Съобщение свободен текст, което да се прикачи към платежното нареждане, за да бъде показано когато нареждането се отвори от клиента на когото е изпратено. Обърнете внимание, че съобщението няма да бъде изпратено заедно с плащането по Retrex мрежата.</translation>
     </message>
     <message>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened.&lt;br&gt;Note: The message will not be sent with the payment over the Phore network.</source>
-        <translation>Съобщение свободен текст, което да се прикачи към платежното нареждане, за да бъде показано когато нареждането се отвори от клиента на когото е изпратено. &lt;br&gt;Обърнете внимание, че съобщението няма да бъде изпратено заедно с плащането по Phore мрежата.</translation>
+        <source>An optional message to attach to the payment request, which will be displayed when the request is opened.&lt;br&gt;Note: The message will not be sent with the payment over the Retrex network.</source>
+        <translation>Съобщение свободен текст, което да се прикачи към платежното нареждане, за да бъде показано когато нареждането се отвори от клиента на когото е изпратено. &lt;br&gt;Обърнете внимание, че съобщението няма да бъде изпратено заедно с плащането по Retrex мрежата.</translation>
     </message>
     <message>
         <source>Use this form to request payments. All fields are &lt;b&gt;optional&lt;/b&gt;.</source>
@@ -3127,8 +3127,8 @@ Please be patient...</source>
         <translation>Размер на UTXO:</translation>
     </message>
     <message>
-        <source>0 PHR</source>
-        <translation>0 PHR</translation>
+        <source>0 REEX</source>
+        <translation>0 REEX</translation>
     </message>
     <message>
         <source>Transaction Fee:</source>
@@ -3179,15 +3179,15 @@ Please be patient...</source>
         <translation>Автоматично избрани монети</translation>
     </message>
     <message>
-        <source>If the custom fee is set to 1000 uPHRs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uPHRs in fee,&lt;br /&gt;while "at least" pays 1000 uPHRs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
-        <translation>Ако собствената такса е настроена на 1000 uPHR и превода е само 250 байта, то тогава "за килобайт" само плаща 250 uPHR входяща такса, &lt;br /&gt;докато "минимална сума" плаща 1000 uPHR. За транзакции по-големи от килобайт, и двете плащат за килобайт.</translation>
+        <source>If the custom fee is set to 1000 uREEXs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uREEXs in fee,&lt;br /&gt;while "at least" pays 1000 uREEXs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
+        <translation>Ако собствената такса е настроена на 1000 uREEX и превода е само 250 байта, то тогава "за килобайт" само плаща 250 uREEX входяща такса, &lt;br /&gt;докато "минимална сума" плаща 1000 uREEX. За транзакции по-големи от килобайт, и двете плащат за килобайт.</translation>
     </message>
     <message>
-        <source>If the custom fee is set to 1000 uPHRs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uPHRs in fee,&lt;br /&gt;while "total at least" pays 1000 uPHRs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
-        <translation>Ако собствената такса е настроена на 1000 uPHR и превода е само 250 байта, то тогава "за килобайт" само плаща 250 uPHR входяща такса,&lt;br /&gt; докато "минимална сума" плаща 1000 uPHR. За транзакции по-големи от килобайт, и двете плащат за килобайт.</translation>
+        <source>If the custom fee is set to 1000 uREEXs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uREEXs in fee,&lt;br /&gt;while "total at least" pays 1000 uREEXs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
+        <translation>Ако собствената такса е настроена на 1000 uREEX и превода е само 250 байта, то тогава "за килобайт" само плаща 250 uREEX входяща такса,&lt;br /&gt; докато "минимална сума" плаща 1000 uREEX. За транзакции по-големи от килобайт, и двете плащат за килобайт.</translation>
     </message>
     <message>
-        <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks.&lt;br /&gt;But be aware that this can end up in a never confirming transaction once there is more demand for Phore transactions than the network can process.</source>
+        <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks.&lt;br /&gt;But be aware that this can end up in a never confirming transaction once there is more demand for Retrex transactions than the network can process.</source>
         <translation>Няма проблем да платите минималната такса, стига обема преводи да е по-малък от наличното място в блоковете. &lt;br /&gt;Но имайте впредвид, че това може да се окаже в превод, който никога не получава потвърждение ако заявките за преводи са повече от колкото мрежата може да понесе.</translation>
     </message>
     <message>
@@ -3235,8 +3235,8 @@ Please be patient...</source>
         <translation>Добави Получател</translation>
     </message>
     <message>
-        <source>Anonymized PHR</source>
-        <translation>Анонимизиран PHR</translation>
+        <source>Anonymized REEX</source>
+        <translation>Анонимизиран REEX</translation>
     </message>
     <message>
         <source>SwiftTX</source>
@@ -3295,8 +3295,8 @@ Please be patient...</source>
         <translation>анонимни средства</translation>
     </message>
     <message>
-        <source>Warning: Invalid Phore address</source>
-        <translation>Предупреждение: Невалиден PHR адрес</translation>
+        <source>Warning: Invalid Retrex address</source>
+        <translation>Предупреждение: Невалиден REEX адрес</translation>
     </message>
     <message>
         <source>any available funds (not recommended)</source>
@@ -3402,8 +3402,8 @@ Please be patient...</source>
         <translation>Плати На:</translation>
     </message>
     <message>
-        <source>The Phore address to send the payment to</source>
-        <translation>Phore адреса - получател на плащането</translation>
+        <source>The Retrex address to send the payment to</source>
+        <translation>Retrex адреса - получател на плащането</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -3442,8 +3442,8 @@ Please be patient...</source>
         <translation>Съобщение:</translation>
     </message>
     <message>
-        <source>A message that was attached to the Phore: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Phore network.</source>
-        <translation>Съобщение, което е било прикачено към Phore:URI и което ще бъде запазено заедно с превода за ваша информация. Внимание: Това съобщение е само за Вас, то няма да бъде изпратено по Phore мрежата.</translation>
+        <source>A message that was attached to the Retrex: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Retrex network.</source>
+        <translation>Съобщение, което е било прикачено към Retrex:URI и което ще бъде запазено заедно с превода за ваша информация. Внимание: Това съобщение е само за Вас, то няма да бъде изпратено по Retrex мрежата.</translation>
     </message>
     <message>
         <source>This is an unverified payment request.</source>
@@ -3469,8 +3469,8 @@ Please be patient...</source>
 <context>
     <name>ShutdownWindow</name>
     <message>
-        <source>Phore Core is shutting down...</source>
-        <translation>Изключване на Phore Ядрото...</translation>
+        <source>Retrex Core is shutting down...</source>
+        <translation>Изключване на Retrex Ядрото...</translation>
     </message>
     <message>
         <source>Do not shut down the computer until this window disappears.</source>
@@ -3492,8 +3492,8 @@ Please be patient...</source>
         <translation>Може да подписвате съобщения с Вашите адреси, за да докажете че сте техен притежател. Внимавайте да не подписвате нищо съмнително, тъй като има хакерски атаки, които целят да придобият вашата самоличност. Само подписвайте пълен и ясен текст, с който сте напълно съгласни.</translation>
     </message>
     <message>
-        <source>The Phore address to sign the message with</source>
-        <translation>Phore адреса, с който да подпишете съобщението</translation>
+        <source>The Retrex address to sign the message with</source>
+        <translation>Retrex адреса, с който да подпишете съобщението</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -3524,16 +3524,16 @@ Please be patient...</source>
         <translation>Копирай сегашния подпис в системния буфер</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this Phore address</source>
-        <translation>Подпишете съобщението, за да докажете, че притежавате този Phore адрес</translation>
+        <source>Sign the message to prove you own this Retrex address</source>
+        <translation>Подпишете съобщението, за да докажете, че притежавате този Retrex адрес</translation>
     </message>
     <message>
-        <source>The Phore address the message was signed with</source>
-        <translation>Phore адреса, който е подписано съобщението</translation>
+        <source>The Retrex address the message was signed with</source>
+        <translation>Retrex адреса, който е подписано съобщението</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified Phore address</source>
-        <translation>Поверете съобщението, за да се уверите, че е подписано със зададения Phore адрес</translation>
+        <source>Verify the message to ensure it was signed with the specified Retrex address</source>
+        <translation>Поверете съобщението, за да се уверите, че е подписано със зададения Retrex адрес</translation>
     </message>
     <message>
         <source>Sign &amp;Message</source>
@@ -3619,8 +3619,8 @@ Please be patient...</source>
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>Phore Core</source>
-        <translation>Phore Ядро</translation>
+        <source>Retrex Core</source>
+        <translation>Retrex Ядро</translation>
     </message>
     <message>
         <source>Version %1</source>
@@ -3635,8 +3635,8 @@ Please be patient...</source>
         <translation>Dash Core разработчици</translation>
     </message>
     <message>
-        <source>The Phore Core developers</source>
-        <translation>Phore Core разработчици</translation>
+        <source>The Retrex Core developers</source>
+        <translation>Retrex Core разработчици</translation>
     </message>
     <message>
         <source>[testnet]</source>
@@ -3955,32 +3955,32 @@ Please be patient...</source>
         <translation>Обфускирани</translation>
     </message>
     <message>
-        <source>Converted Phr to zPhr</source>
-        <translation>Конвертиран PHR във zPHR</translation>
+        <source>Converted Reex to zReex</source>
+        <translation>Конвертиран REEX във zREEX</translation>
     </message>
     <message>
-        <source>Spent zPhr</source>
-        <translation>Похарчени zPHR</translation>
+        <source>Spent zReex</source>
+        <translation>Похарчени zREEX</translation>
     </message>
     <message>
-        <source>Received Phr from zPhr</source>
-        <translation>Получен PHR от zPHR</translation>
+        <source>Received Reex from zReex</source>
+        <translation>Получен REEX от zREEX</translation>
     </message>
     <message>
-        <source>Minted Change as zPhr from zPhr Spend</source>
-        <translation>Исечено ресто като zPHR от похарчените zPHR</translation>
+        <source>Minted Change as zReex from zReex Spend</source>
+        <translation>Исечено ресто като zREEX от похарчените zREEX</translation>
     </message>
     <message>
-        <source>Converted zPhr to Phr</source>
-        <translation>Конвертирани zPHR в PHR</translation>
+        <source>Converted zReex to Reex</source>
+        <translation>Конвертирани zREEX в REEX</translation>
     </message>
     <message>
         <source>watch-only</source>
         <translation>наблюдение само</translation>
     </message>
     <message>
-        <source>zPhr Accumulator</source>
-        <translation>zPHR Акумулатор</translation>
+        <source>zReex Accumulator</source>
+        <translation>zREEX Акумулатор</translation>
     </message>
     <message>
         <source>(n/a)</source>
@@ -4086,8 +4086,8 @@ Please be patient...</source>
         <translation>Мастърноуд възнаграждение</translation>
     </message>
     <message>
-        <source>Received Phr from zPhr</source>
-        <translation>Получен PHR от zPHR</translation>
+        <source>Received Reex from zReex</source>
+        <translation>Получен REEX от zREEX</translation>
     </message>
     <message>
         <source>Zerocoin Mint</source>
@@ -4098,8 +4098,8 @@ Please be patient...</source>
         <translation>Харчене на Zerocoin</translation>
     </message>
     <message>
-        <source>Zerocoin Spend, Change in zPhr</source>
-        <translation>Харчене на Zerocoin, Ресто в zPHR</translation>
+        <source>Zerocoin Spend, Change in zReex</source>
+        <translation>Харчене на Zerocoin, Ресто в zREEX</translation>
     </message>
     <message>
         <source>Zerocoin Spend to Self</source>
@@ -4215,8 +4215,8 @@ Please be patient...</source>
         <translation>Изпрати Монети</translation>
     </message>
     <message>
-        <source>SwiftTX doesn't support sending values that high yet. Transactions are currently limited to %1 PHR.</source>
-        <translation>SwiftTX не подържа изпращането на толкова големи суми. Превода е ограничен до %1 PHR.</translation>
+        <source>SwiftTX doesn't support sending values that high yet. Transactions are currently limited to %1 REEX.</source>
+        <translation>SwiftTX не подържа изпращането на толкова големи суми. Превода е ограничен до %1 REEX.</translation>
     </message>
 </context>
 <context>
@@ -4259,10 +4259,10 @@ Please be patient...</source>
     </message>
 </context>
 <context>
-    <name>ZPhrControlDialog</name>
+    <name>ZReexControlDialog</name>
     <message>
-        <source>Select zPhr to Spend</source>
-        <translation>Изберете zPHR за Изпращане</translation>
+        <source>Select zReex to Spend</source>
+        <translation>Изберете zREEX за Изпращане</translation>
     </message>
     <message>
         <source>Quantity</source>
@@ -4273,8 +4273,8 @@ Please be patient...</source>
         <translation>0</translation>
     </message>
     <message>
-        <source>zPhr</source>
-        <translation>zPHR</translation>
+        <source>zReex</source>
+        <translation>zREEX</translation>
     </message>
     <message>
         <source>Select/Deselect All</source>
@@ -4286,7 +4286,7 @@ Please be patient...</source>
     </message>
 </context>
 <context>
-    <name>phore-core</name>
+    <name>retrex-core</name>
     <message>
         <source>Change automatic finalized budget voting behavior. mode=auto: Vote for only exact finalized budget match to my generated budget. (string, default: auto)</source>
         <translation>Промяна на поведението на автоматично финализираното гласоподаване. mode=auto: Гласувай само за точни финализирани бюджети, които съвпадат с моят генериран бюджет. (string, default:auto)</translation>
@@ -4304,8 +4304,8 @@ Please be patient...</source>
         <translation>Изтрий всички преводи от портфейла и възстанови само тези части от блокчейна - сканира при стартиране.</translation>
     </message>
     <message>
-        <source>Disable all Phore specific functionality (Masternodes, Obfuscation, SwiftTX, Budgeting) (0-1, default: %u)</source>
-        <translation>Изключи всякаква Phore функционалност (Мастърноудове, Обфускация, SwiftTX, Бюджетиране) (0-1 default: %u)</translation>
+        <source>Disable all Retrex specific functionality (Masternodes, Obfuscation, SwiftTX, Budgeting) (0-1, default: %u)</source>
+        <translation>Изключи всякаква Retrex функционалност (Мастърноудове, Обфускация, SwiftTX, Бюджетиране) (0-1 default: %u)</translation>
     </message>
     <message>
         <source>Distributed under the MIT software license, see the accompanying file COPYING or &lt;http://www.opensource.org/licenses/mit-license.php&gt;.</source>
@@ -4344,12 +4344,12 @@ Please be patient...</source>
         <translation>Командата влиза в сила, когато най-добрия блок се промени (%s в cmd се замества от хаш на блока)</translation>
     </message>
     <message>
-        <source>Fees (in PHR/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
-        <translation>Такси (в PHR/Кб) по-малки от това се считат за нулеви при препращане (default: %s)</translation>
+        <source>Fees (in REEX/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
+        <translation>Такси (в REEX/Кб) по-малки от това се считат за нулеви при препращане (default: %s)</translation>
     </message>
     <message>
-        <source>Fees (in PHR/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
-        <translation>Такси (в PHR/Кб) по-малки от това се считат за нулеви при създаване на предовда (default: %s)</translation>
+        <source>Fees (in REEX/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
+        <translation>Такси (в REEX/Кб) по-малки от това се считат за нулеви при създаване на предовда (default: %s)</translation>
     </message>
     <message>
         <source>Flush database activity from memory pool to disk log every &lt;n&gt; megabytes (default: %u)</source>

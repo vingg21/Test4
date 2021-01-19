@@ -2,8 +2,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef PHORE_ACCUMULATORCHECKPOINTS_JSON_H
-#define PHORE_ACCUMULATORCHECKPOINTS_JSON_H
+#ifndef RETREX_ACCUMULATORCHECKPOINTS_JSON_H
+#define RETREX_ACCUMULATORCHECKPOINTS_JSON_H
 
 #include <string>
 std::string GetMainCheckpoints() {
@@ -310,4 +310,4 @@ std::string GetRegTestCheckpoints() {
     return strRegTestCheckpoints;
 }
 
-#endif //PHORE_ACCUMULATORCHECKPOINTS_JSON_H
+#endif //RETREX_ACCUMULATORCHECKPOINTS_JSON_H

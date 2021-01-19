@@ -1,7 +1,7 @@
 /* @flow */
 // Copyright (c) 2012-2013 The PPCoin developers
 // Copyright (c) 2015-2017 The PIVX developers
-// Copyright (c) 2019 The Phore Developers
+// Copyright (c) 2021 The Retrex Developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -406,9 +406,9 @@ bool initStakeInput(const CBlock block, std::unique_ptr<CStakeInput>& stake, int
     if (!VerifyScript(txin.scriptSig, txPrev.vout[txin.prevout.n].scriptPubKey, NULL, STANDARD_SCRIPT_VERIFY_FLAGS, TransactionSignatureChecker(&tx, 0, txPrev.vout[txin.prevout.n].nValue)))
         return error("initStakeInput() : VerifySignature failed on coinstake %s", tx.GetHash().ToString().c_str());
 
-    CPhoreStake* phrInput = new CPhoreStake();
-    phrInput->SetInput(txPrev, txin.prevout.n);
-    stake = std::unique_ptr<CStakeInput>(phrInput);
+    CRetrexStake* reexInput = new CRetrexStake();
+    reexInput->SetInput(txPrev, txin.prevout.n);
+    stake = std::unique_ptr<CStakeInput>(reexInput);
 
     return true;
 }

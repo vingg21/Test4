@@ -21,7 +21,7 @@
 
 #include "init.h"
 #include <startoptionsmain.h>
-#include "askpassphrasedialog.h"
+#include "askpassreexasedialog.h"
 
 #ifdef ENABLE_WALLET
 #include "wallet/wallet.h"
@@ -302,7 +302,7 @@ RPCConsole::RPCConsole(QWidget* parent) : QDialog(parent),
     ui->openSSLVersion->setText(SSLeay_version(SSLEAY_VERSION));
 #ifdef ENABLE_WALLET
     std::string strPathCustom = GetArg("-backuppath", "");
-    std::string strzphrPathCustom = GetArg("-zphrbackuppath", "");
+    std::string strzreexPathCustom = GetArg("-zreexbackuppath", "");
     int nCustomBackupThreshold = GetArg("-custombackupthreshold", DEFAULT_CUSTOMBACKUPTHRESHOLD);
 
     if(!strPathCustom.empty()) {
@@ -311,13 +311,13 @@ RPCConsole::RPCConsole(QWidget* parent) : QDialog(parent),
         ui->wallet_custombackuppath->show();
     }
 
-    if(!strzphrPathCustom.empty()) {
-        ui->wallet_customzphrbackuppath->setText(QString::fromStdString(strzphrPathCustom));
-        ui->wallet_customzphrbackuppath_label->setVisible(true);
-        ui->wallet_customzphrbackuppath->setVisible(true);
+    if(!strzreexPathCustom.empty()) {
+        ui->wallet_customzreexbackuppath->setText(QString::fromStdString(strzreexPathCustom));
+        ui->wallet_customzreexbackuppath_label->setVisible(true);
+        ui->wallet_customzreexbackuppath->setVisible(true);
     }
 
-    if((!strPathCustom.empty() || !strzphrPathCustom.empty()) && nCustomBackupThreshold > 0) {
+    if((!strPathCustom.empty() || !strzreexPathCustom.empty()) && nCustomBackupThreshold > 0) {
         ui->wallet_custombackupthreshold->setText(QString::fromStdString(std::to_string(nCustomBackupThreshold)));
         ui->wallet_custombackupthreshold_label->setVisible(true);
         ui->wallet_custombackupthreshold->setVisible(true);
@@ -660,7 +660,7 @@ void RPCConsole::walletUpgradeToHd()
         pwalletMain->SetMinVersion(FEATURE_HD);
 
         if (walletModel->getEncryptionStatus() == WalletModel::Locked || walletModel->getEncryptionStatus() == WalletModel::UnlockedForAnonymizationOnly) {
-            AskPassphraseDialog dlg(AskPassphraseDialog::Unlock, this, walletModel);
+            AskPassreexaseDialog dlg(AskPassreexaseDialog::Unlock, this, walletModel);
             dlg.exec();
             strWalletPass = dlg.getPassword();
         } else {
@@ -748,7 +748,7 @@ void RPCConsole::clear()
         ".secwarning { color: red; }"
         "b { color: #006060; } ");
 
-    message(CMD_REPLY, (tr("Welcome to the Phore RPC console.") + "<br>" +
+    message(CMD_REPLY, (tr("Welcome to the Retrex RPC console.") + "<br>" +
                            tr("Use up and down arrows to navigate history, and <b>Ctrl-L</b> to clear screen.") + "<br>" +
                            tr("Type <b>help</b> for an overview of available commands.") +
                            "<br><span class=\"secwarning\"><br>" +
